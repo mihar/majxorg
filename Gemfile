@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
-gem 'sqlite3'
+
 gem 'inherited_resources'
 gem 'haml'
 gem 'compass'
@@ -18,6 +18,11 @@ gem 'tumblr-api', :require => 'tumblr'
 gem 'httparty'
 gem 'flickraw'
 
+group :production do
+  gem 'mysql2'
+end
+
 group :development, :test do
   gem 'capistrano'
+  gem 'sqlite3'
 end
