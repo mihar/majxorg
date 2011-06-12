@@ -1,17 +1,22 @@
 #tier_1
   %section#posts
     %h1 My posts
-    = render @posts
+    - cache @posts.first do
+      = render @posts
   %section#photos
     %h1 My photos
-    %ul= render @photos, :square => true
+    - cache @photos.first do
+      %ul= render @photos, :square => true
   %section#bookmarks
     %h1 My bookmarks
-    %dl= render @bookmarks
+    - cache @bookmarks.first do
+      %dl= render @bookmarks
 #tier_2
   %section#tweets
     %h1 My tweets
-    %dl= render @tweets
+    - cache @tweets.first do
+      %dl= render @tweets
   %section#tracks
     %h1 My tunes
-    %dl= render @tracks
+    - cache @tracks.first do
+      %dl= render @tracks

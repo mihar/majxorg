@@ -662,12 +662,12 @@ body {
 }
 /* line 132, ../../app/stylesheets/application.sass */
 #container section#bookmarks {
-  padding-top: 20px;
   border: 0;
 }
-/* line 135, ../../app/stylesheets/application.sass */
+/* line 134, ../../app/stylesheets/application.sass */
 #container section#photos {
   *zoom: 1;
+  padding-bottom: 25px;
 }
 /* line 38, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #container section#photos:after {
