@@ -466,7 +466,7 @@ input:invalid, textarea:invalid {
 
 /* line 4, ../../app/stylesheets/application.sass */
 body {
-  background: #222222;
+  background: #222222 url(/images/DotGrid2.png);
 }
 
 /* line 7, ../../app/stylesheets/application.sass */
