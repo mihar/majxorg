@@ -25,10 +25,15 @@ namespace :deploy do
   task :link_geodb do
     run "ln -s #{shared_path}/db/GeoLiteCity.dat #{current_path}/db/GeoLiteCity.dat"
   end
+  task :link_db do
+    run "ln -s #{shared_path}/config/database.yml #{current_path}/config/database.yml"
+  end
 end
 
 # Link Geo DB.
 after "deploy:update", "deploy:link_geodb"
+# Link DB.
+after "deploy:update", "deploy:link_db"
 
 require 'config/boot'
 

@@ -22,8 +22,5 @@
   
   -# All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects
   = javascript_include_tag 'modernizr.min'
-  %script{:type => "text/javascript", :src => "http://use.typekit.com/ble2qud.js"}
-  :javascript
-    try{Typekit.load();}catch(e){}
   
   = csrf_meta_tag
