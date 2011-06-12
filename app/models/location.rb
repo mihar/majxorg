@@ -15,7 +15,7 @@ class Location < ActiveRecord::Base
       new_location = self.new
       # Fetch lat lng
       if location["geometry"] and coords = location["geometry"]["coordinates"]
-        new_location.lat, new_location.lng = coords[0], coords[1]
+        new_location.lng, new_location.lat = coords[0], coords[1]
       end
       # Fetch time and reverse
       if properties = location["properties"] 
@@ -29,9 +29,9 @@ class Location < ActiveRecord::Base
   def static_map
     map_url = "http://maps.google.com/maps/api/staticmap?"
     map_url += "zoom=12&markers=size:mid|label:M|"
-    map_url += lng.to_s
-    map_url += ","
     map_url += lat.to_s
+    map_url += ","
+    map_url += lng.to_s
     map_url += "&size=240x240&sensor=false"
   end
   
