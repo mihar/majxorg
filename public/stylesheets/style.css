@@ -694,48 +694,47 @@ body {
   text-decoration: none;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
-  -webkit-transition: -webkit-transform 0.15s ease;
-  -moz-transition: -moz-transform 0.15s ease;
 }
-/* line 154, ../../app/stylesheets/application.sass */
+/* line 152, ../../app/stylesheets/application.sass */
 #container section#photos li a:hover {
+  -moz-transition: -moz-transform 0.15s;
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
 }
-/* line 159, ../../app/stylesheets/application.sass */
+/* line 158, ../../app/stylesheets/application.sass */
 #container section#photos li a img {
   display: block;
 }
 
-/* line 165, ../../app/stylesheets/application.sass */
+/* line 164, ../../app/stylesheets/application.sass */
 #photos-index ul li {
   display: inline;
   list-style: none outside;
 }
-/* line 168, ../../app/stylesheets/application.sass */
+/* line 167, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(even) a {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
   margin-top: -25px;
   margin-left: -25px;
 }
-/* line 174, ../../app/stylesheets/application.sass */
+/* line 173, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(3n) a {
   -webkit-transform: none;
   -moz-transform: none;
   position: relative;
   top: -5px;
 }
-/* line 179, ../../app/stylesheets/application.sass */
+/* line 178, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(5n) a {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
   position: relative;
   right: 5px;
 }
-/* line 184, ../../app/stylesheets/application.sass */
+/* line 183, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(8n) a {
   position: relative;
   top: 8px;
@@ -743,13 +742,13 @@ body {
   margin-top: -5px;
   margin-left: -5px;
 }
-/* line 191, ../../app/stylesheets/application.sass */
+/* line 190, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(11n) a {
   position: relative;
   top: 3px;
   left: -5px;
 }
-/* line 195, ../../app/stylesheets/application.sass */
+/* line 194, ../../app/stylesheets/application.sass */
 #photos-index ul li a {
   float: left;
   display: block;
@@ -769,11 +768,11 @@ body {
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
 }
-/* line 214, ../../app/stylesheets/application.sass */
+/* line 213, ../../app/stylesheets/application.sass */
 #photos-index ul li a:after {
   content: attr(title);
 }
-/* line 216, ../../app/stylesheets/application.sass */
+/* line 215, ../../app/stylesheets/application.sass */
 #photos-index ul li a:hover {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
@@ -782,7 +781,7 @@ body {
   position: relative;
   z-index: 5;
 }
-/* line 223, ../../app/stylesheets/application.sass */
+/* line 222, ../../app/stylesheets/application.sass */
 #photos-index ul li a span {
   width: 150px;
   height: 150px;
@@ -790,21 +789,21 @@ body {
   display: block;
   margin-bottom: 15px;
 }
-/* line 229, ../../app/stylesheets/application.sass */
+/* line 228, ../../app/stylesheets/application.sass */
 #photos-index ul li a img {
   display: block;
   margin-top: -25px;
   margin-left: -25px;
 }
 
-/* line 235, ../../app/stylesheets/application.sass */
+/* line 234, ../../app/stylesheets/application.sass */
 #footer {
   clear: both;
   padding-top: 1px;
   padding-bottom: 50px;
   margin-left: 310px;
 }
-/* line 241, ../../app/stylesheets/application.sass */
+/* line 240, ../../app/stylesheets/application.sass */
 #footer #copyright {
   margin-top: 25px;
   padding-top: 25px;
