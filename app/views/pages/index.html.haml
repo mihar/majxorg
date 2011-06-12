@@ -1,0 +1,17 @@
+#tier_1
+  %section#posts
+    %h1 My posts
+    = render @posts
+  %section#photos
+    %h1 My photos
+    %ul= render @photos, :square => true
+  %section#bookmarks
+    %h1 My bookmarks
+    %dl= render @bookmarks
+#tier_2
+  %section#tweets
+    %h1 My tweets
+    %dl= render @tweets
+  %section#tracks
+    %h1 My tunes
+    %dl= render @tracks

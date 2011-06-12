@@ -1,0 +1,242 @@
+
+$m-blue: #1d92b5
+
+body
+  background: #222
+
+#side
+  width: 250px
+  float: left
+  position: fixed
+  top: 100px
+  #card
+    margin-top: 50px
+    h1
+      font-size: 20px
+    h2
+      font-weight: normal
+      font-size: 14px
+    p
+      margin: 10px 0
+      font-size: 14px
+      +serif
+      +italic
+  #location
+    margin-top: 50px
+    padding-left: 32px
+    background: url(/images/icons/location.png) no-repeat 0px 2px
+    &:hover
+      background-position: 0px -25px
+    em
+      display: block
+      line-height: 10px
+      color: #666
+      +real-small
+  #social
+    margin: 0
+      top: 50px
+    padding: 0
+    li
+      list-style: none
+      padding-left: 32px
+      height: 26px
+      line-height: 26px
+      &.facebook
+        background: url(/images/icons/facebook.png) no-repeat
+      &.twitter
+        background: url(/images/icons/twitter.png) no-repeat
+      &.lastfm
+        background: url(/images/icons/lastfm.png) no-repeat
+      &.skype
+        background: url(/images/icons/skype.png) no-repeat
+      &.flickr
+        background: url(/images/icons/flickr.png) no-repeat
+      &.delicious
+        background: url(/images/icons/delicious.png) no-repeat
+      &.linkedin
+        background: url(/images/icons/linkedin.png) no-repeat
+      &:hover
+        background-position: 0px -26px
+      
+    
+
+#tier_1, #tier_2
+  margin-top: -4px
+#tier_1
+  padding:
+    left: 310px
+    top: 100px
+  width: 360px
+  float: left
+#tier_2
+  padding-top: 100px
+  width: 250px
+  float: right
+
+
+#container
+  position: relative
+  margin: 0 auto
+  width: 960px
+  a
+    color: $m-blue
+    text-decoration: none
+    +dark-shadow
+    &:link
+      color: $m-blue
+    &:visited
+      color: $m-blue
+    &:hover
+      text-decoration: underline
+    &:active
+      color: #24BCEA
+  #header
+    position: relative
+    margin: 75px 0 50px 0
+    #card
+      position: absolute
+      top: 0
+      right: 0
+      text-align: right
+      h1
+        font-size: 24px
+      p
+        margin-top: 20px
+        +serif
+        +italic
+        font-size: 16px
+        
+  section
+    margin-bottom: 25px
+    .date
+      +real-small
+      +right
+      color: #666
+      margin-bottom: 19px
+    &:hover
+      h1
+        text-shadow: 0px 0px 5px $m-blue
+    h1
+      +large
+      line-height: 24px
+      margin-bottom: 25px
+      
+    &#tweets
+      dt
+        span
+          color: $m-blue
+      dd
+    &#posts
+    &#bookmarks
+    &#photos
+      +pie-clearfix
+      ul
+        list-style: none
+        margin: 0
+      li
+        float: left
+        a
+          display: block
+          background: rgba(255,255,255,.6)
+          padding: 2.5px
+          margin:
+            right: 7.5px
+            bottom: 7.5px
+          text-decoration: none
+          -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.75)
+          -moz-box-shadow: 0 3px 6px rgba(0,0,0,.75)
+          -webkit-transition: -webkit-transform .15s ease
+          -moz-transition: -moz-transform .15s ease
+          &:hover
+            -webkit-transform: scale(1.1)
+            -moz-transform: scale(1.1)
+            -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.95)
+            -moz-box-shadow: 0 3px 6px rgba(0,0,0,.95)
+          img
+            display: block
+          
+    
+#photos-index
+  ul
+    li
+      display: inline
+      list-style: none outside
+      &:nth-child(even) a
+        -webkit-transform: rotate(2deg)
+        -moz-transform: rotate(2deg)
+        margin:
+          top: -25px
+          left: -25px
+      &:nth-child(3n) a
+        -webkit-transform: none
+        -moz-transform: none
+        position: relative
+        top: -5px
+      &:nth-child(5n) a
+        -webkit-transform: rotate(5deg)
+        -moz-transform: rotate(5deg)
+        position: relative
+        right: 5px
+      &:nth-child(8n) a
+        position: relative
+        top: 8px
+        right: 5px
+        margin:
+          top: -5px
+          left: -5px
+      &:nth-child(11n) a
+        position: relative
+        top: 3px
+        left: -5px
+      a
+        float: left
+        display: block
+        background: #fff
+        margin:
+          top: -15px
+          left: -15px
+        padding: 10px
+          bottom: 15px
+        font: 14px/14px "Marker Felt"
+        color: #333
+        text-decoration: none
+        text-align: center
+        -webkit-transition: -webkit-transform .15s ease
+        -moz-transition: -moz-transform .15s ease
+        -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5)
+        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5)
+        -webkit-transform: rotate(-2deg)
+        -moz-transform: rotate(-2deg)
+        &:after
+          content: attr(title)
+        &:hover
+          -webkit-transform: scale(1.25)
+          -moz-transform: scale(1.25)
+          -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.75)
+          -moz-box-shadow: 0 3px 6px rgba(0,0,0,.75)
+          position: relative
+          z-index: 5
+        span
+          width: 150px
+          height: 150px
+          overflow: hidden
+          display: block
+          margin-bottom: 15px
+        img
+          display: block
+          margin-top: -25px
+          margin-left: -25px
+
+            
+#footer
+  clear: both
+  padding:
+    top: 1px
+    bottom: 50px
+  margin-left: 310px
+  #copyright
+    margin-top: 25px
+    padding-top: 25px
+    border-top: 1px solid #292929
+    color: #666
+    +dark-shadow

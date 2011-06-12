@@ -1,0 +1,7 @@
+%li
+  = link_to photo.url, :title => photo.title, :rel => :lightbox do
+    - if defined?(square) and square
+      - url = photo.url_square
+    - else
+      - url = photo.url_small
+    %span= image_tag(url, :alt => photo.title)

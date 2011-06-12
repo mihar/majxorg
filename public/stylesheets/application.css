@@ -1,0 +1,102 @@
+/*
+Syntax error: Undefined mixin 'serif'.
+        on line 22 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass, in `serif'
+        from line 22 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass
+
+17:       font-weight: normal
+18:       font-size: 14px
+19:     p
+20:       margin: 10px 0
+21:       font-size: 14px
+22:       +serif
+23:       +italic
+24:   #location
+25:     margin-top: 50px
+26:     padding-left: 32px
+27:     background: url(/images/icons/location.png) no-repeat 0px 2px
+
+Backtrace:
+/Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass:22:in `serif'
+/Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass:22
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/root_node.rb:59:in `perform!'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/root_node.rb:37:in `perform'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/tree/root_node.rb:29:in `render'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/plugin.rb:223:in `update_stylesheet'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/plugin.rb:88:in `update_stylesheets'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `each'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `each'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `update_stylesheets'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/plugin.rb:50:in `check_for_updates'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/haml-3.0.25/lib/sass/plugin/rack.rb:40:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/rack-1.2.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.5/lib/rails/application.rb:77:in `send'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:146:in `handle'
+/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:99:in `start'
+/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:86:in `each'
+/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:86:in `start'
+/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:66:in `loop'
+/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:66:in `start'
+/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:13:in `run'
+/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/bin/nack_worker:4
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'serif'.\A         on line 22 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass, in `serif'\A         from line 22 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass\A \A 17:       font-weight: normal\A 18:       font-size: 14px\A 19:     p\A 20:       margin: 10px 0\A 21:       font-size: 14px\A 22:       +serif\A 23:       +italic\A 24:   #location\A 25:     margin-top: 50px\A 26:     padding-left: 32px\A 27:     background: url(/images/icons/location.png) no-repeat 0px 2px"; }

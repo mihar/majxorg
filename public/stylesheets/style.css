@@ -1,0 +1,830 @@
+@charset "UTF-8";
+/* line 14, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 24, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 28, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 31, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 33, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 35, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 37, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 39, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 41, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 43, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 45, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 11, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_fonts.scss */
+body {
+  font-size: 14px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.33;
+  *font-size: small;
+}
+
+/* line 18, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_fonts.scss */
+select, input, textarea, button {
+  font: 99% Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* line 23, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_fonts.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* line 15, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 17, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+ul, ol {
+  margin-left: 2em;
+}
+
+/* line 18, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+ol {
+  list-style-type: decimal;
+}
+
+/* line 20, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+td, td img {
+  vertical-align: top;
+}
+
+/* line 22, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  bottom: -0.25em;
+}
+
+/* line 24, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  top: -0.5em;
+}
+
+/* line 26, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 57, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+a:hover, a:active {
+  outline: none;
+}
+
+/* line 62, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
+/* line 71, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* line 72, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+/* line 73, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+/* line 74, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+/* line 79, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer;
+}
+
+/* line 84, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* line 91, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+::-moz-selection {
+  background: #ff5e99;
+  color: white;
+  text-shadow: none;
+}
+
+/* line 92, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+::selection {
+  background: #ff5e99;
+  color: white;
+  text-shadow: none;
+}
+
+/* line 97, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+a:link {
+  -webkit-tap-highlight-color: #ff5e99;
+}
+
+/* line 108, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* line 112, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 114, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+/* line 119, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 10, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_helpers.scss */
+.ir {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  direction: ltr;
+  background-repeat: no-repeat;
+}
+
+/* line 12, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_helpers.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 14, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 50, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_helpers.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 16, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_helpers.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 22, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 8, ../../app/stylesheets/partials/_page.sass */
+body, select, input, textarea {
+  color: #eeeeee;
+}
+
+/* line 14, ../../app/stylesheets/partials/_page.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* line 19, ../../app/stylesheets/partials/_page.sass */
+a, a:active, a:visited {
+  color: #607890;
+}
+
+/* line 22, ../../app/stylesheets/partials/_page.sass */
+a:hover {
+  color: #003366;
+}
+
+/* line 25, ../../app/stylesheets/partials/_page.sass */
+strong, th {
+  font-weight: bold;
+}
+
+/* line 28, ../../app/stylesheets/partials/_page.sass */
+small {
+  font-size: 79%;
+}
+
+/* line 38, ../../app/stylesheets/partials/_page.sass */
+input:invalid, textarea:invalid {
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -o-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -khtml-border-radius: 1px;
+  border-radius: 1px;
+  -moz-box-shadow: red 0 0 5px 0;
+  -webkit-box-shadow: red 0 0 5px 0;
+  -o-box-shadow: red 0 0 5px 0;
+  box-shadow: red 0 0 5px 0;
+}
+
+/* line 42, ../../app/stylesheets/partials/_page.sass */
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid {
+  background-color: #f0dddd;
+}
+
+@media print {
+  /* line 24, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* line 26, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+
+  /* line 27, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 28, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 29, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 30, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 31, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 32, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 34, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 35, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+@media all and (orientation:portrait) {}
+@media all and (orientation:landscape) {}
+@media screen and (max-device-width: 480px) {}
+/* SLIMBOX */
+/* line 3, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbOverlay {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* line 13, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbCenter, #lbBottomContainer {
+  position: absolute;
+  z-index: 9999;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* line 19, ../../app/stylesheets/partials/_slimbox2.sass */
+.lbLoading {
+  background: white url(/images/loading.gif) no-repeat center;
+}
+
+/* line 22, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 10px solid white;
+  background-repeat: no-repeat;
+}
+
+/* line 29, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbPrevLink, #lbNextLink {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  outline: none;
+}
+
+/* line 36, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbPrevLink {
+  left: 0;
+}
+/* line 38, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbPrevLink:hover {
+  background: transparent url(/images/prevlabel.gif) no-repeat 0 15%;
+}
+
+/* line 41, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbNextLink {
+  right: 0;
+}
+/* line 43, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbNextLink:hover {
+  background: transparent url(/images/nextlabel.gif) no-repeat 100% 15%;
+}
+
+/* line 46, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbBottom {
+  font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #666666;
+  line-height: 1.4em;
+  text-align: left;
+  border: 10px solid white;
+  border-top-style: none;
+}
+
+/* line 55, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbCloseLink {
+  display: block;
+  float: right;
+  width: 66px;
+  height: 22px;
+  background: transparent url(/images/closelabel.gif) no-repeat center;
+  margin: 5px 0;
+  outline: none;
+}
+
+/* line 64, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbCaption, #lbNumber {
+  margin-right: 71px;
+}
+
+/* line 67, ../../app/stylesheets/partials/_slimbox2.sass */
+#lbCaption {
+  font-weight: bold;
+}
+
+/* line 4, ../../app/stylesheets/application.sass */
+body {
+  background: #222222;
+}
+
+/* line 7, ../../app/stylesheets/application.sass */
+#side {
+  width: 250px;
+  float: left;
+  position: fixed;
+  top: 100px;
+}
+/* line 12, ../../app/stylesheets/application.sass */
+#side #card {
+  margin-top: 50px;
+}
+/* line 14, ../../app/stylesheets/application.sass */
+#side #card h1 {
+  font-size: 20px;
+}
+/* line 16, ../../app/stylesheets/application.sass */
+#side #card h2 {
+  font-weight: normal;
+  font-size: 14px;
+}
+/* line 19, ../../app/stylesheets/application.sass */
+#side #card p {
+  margin: 10px 0;
+  font-size: 14px;
+  font-family: Palatino, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+/* line 24, ../../app/stylesheets/application.sass */
+#side #location {
+  margin-top: 50px;
+  padding-left: 32px;
+  background: url(/images/icons/location.png) no-repeat 0px 2px;
+}
+/* line 28, ../../app/stylesheets/application.sass */
+#side #location:hover {
+  background-position: 0px -25px;
+}
+/* line 30, ../../app/stylesheets/application.sass */
+#side #location em {
+  display: block;
+  line-height: 10px;
+  color: #666666;
+  font-size: 10px;
+}
+/* line 35, ../../app/stylesheets/application.sass */
+#side #social {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+}
+/* line 39, ../../app/stylesheets/application.sass */
+#side #social li {
+  list-style: none;
+  padding-left: 32px;
+  height: 26px;
+  line-height: 26px;
+}
+/* line 44, ../../app/stylesheets/application.sass */
+#side #social li.facebook {
+  background: url(/images/icons/facebook.png) no-repeat;
+}
+/* line 46, ../../app/stylesheets/application.sass */
+#side #social li.twitter {
+  background: url(/images/icons/twitter.png) no-repeat;
+}
+/* line 48, ../../app/stylesheets/application.sass */
+#side #social li.lastfm {
+  background: url(/images/icons/lastfm.png) no-repeat;
+}
+/* line 50, ../../app/stylesheets/application.sass */
+#side #social li.skype {
+  background: url(/images/icons/skype.png) no-repeat;
+}
+/* line 52, ../../app/stylesheets/application.sass */
+#side #social li.flickr {
+  background: url(/images/icons/flickr.png) no-repeat;
+}
+/* line 54, ../../app/stylesheets/application.sass */
+#side #social li.delicious {
+  background: url(/images/icons/delicious.png) no-repeat;
+}
+/* line 56, ../../app/stylesheets/application.sass */
+#side #social li.linkedin {
+  background: url(/images/icons/linkedin.png) no-repeat;
+}
+/* line 58, ../../app/stylesheets/application.sass */
+#side #social li:hover {
+  background-position: 0px -26px;
+}
+
+/* line 63, ../../app/stylesheets/application.sass */
+#tier_1, #tier_2 {
+  margin-top: -4px;
+}
+
+/* line 65, ../../app/stylesheets/application.sass */
+#tier_1 {
+  padding-left: 310px;
+  padding-top: 100px;
+  width: 360px;
+  float: left;
+}
+
+/* line 71, ../../app/stylesheets/application.sass */
+#tier_2 {
+  padding-top: 100px;
+  width: 250px;
+  float: right;
+}
+
+/* line 77, ../../app/stylesheets/application.sass */
+#container {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+}
+/* line 81, ../../app/stylesheets/application.sass */
+#container a {
+  color: #1d92b5;
+  text-decoration: none;
+  text-shadow: 0px 1px 1px black;
+}
+/* line 85, ../../app/stylesheets/application.sass */
+#container a:link {
+  color: #1d92b5;
+}
+/* line 87, ../../app/stylesheets/application.sass */
+#container a:visited {
+  color: #1d92b5;
+}
+/* line 89, ../../app/stylesheets/application.sass */
+#container a:hover {
+  text-decoration: underline;
+}
+/* line 91, ../../app/stylesheets/application.sass */
+#container a:active {
+  color: #24bcea;
+}
+/* line 93, ../../app/stylesheets/application.sass */
+#container #header {
+  position: relative;
+  margin: 75px 0 50px 0;
+}
+/* line 96, ../../app/stylesheets/application.sass */
+#container #header #card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+/* line 101, ../../app/stylesheets/application.sass */
+#container #header #card h1 {
+  font-size: 24px;
+}
+/* line 103, ../../app/stylesheets/application.sass */
+#container #header #card p {
+  margin-top: 20px;
+  font-family: Palatino, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 16px;
+}
+/* line 109, ../../app/stylesheets/application.sass */
+#container section {
+  margin-bottom: 25px;
+}
+/* line 111, ../../app/stylesheets/application.sass */
+#container section .date {
+  font-size: 10px;
+  text-align: right;
+  color: #666666;
+  margin-bottom: 19px;
+}
+/* line 117, ../../app/stylesheets/application.sass */
+#container section:hover h1 {
+  text-shadow: 0px 0px 5px #1d92b5;
+}
+/* line 119, ../../app/stylesheets/application.sass */
+#container section h1 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+/* line 126, ../../app/stylesheets/application.sass */
+#container section#tweets dt span {
+  color: #1d92b5;
+}
+/* line 131, ../../app/stylesheets/application.sass */
+#container section#photos {
+  *zoom: 1;
+}
+/* line 22, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#container section#photos:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 133, ../../app/stylesheets/application.sass */
+#container section#photos ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 136, ../../app/stylesheets/application.sass */
+#container section#photos li {
+  float: left;
+}
+/* line 138, ../../app/stylesheets/application.sass */
+#container section#photos li a {
+  display: block;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2.5px;
+  margin-right: 7.5px;
+  margin-bottom: 7.5px;
+  text-decoration: none;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
+  -webkit-transition: -webkit-transform 0.15s ease;
+  -moz-transition: -moz-transform 0.15s ease;
+}
+/* line 150, ../../app/stylesheets/application.sass */
+#container section#photos li a:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
+}
+/* line 155, ../../app/stylesheets/application.sass */
+#container section#photos li a img {
+  display: block;
+}
+
+/* line 161, ../../app/stylesheets/application.sass */
+#photos-index ul li {
+  display: inline;
+  list-style: none outside;
+}
+/* line 164, ../../app/stylesheets/application.sass */
+#photos-index ul li:nth-child(even) a {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  margin-top: -25px;
+  margin-left: -25px;
+}
+/* line 170, ../../app/stylesheets/application.sass */
+#photos-index ul li:nth-child(3n) a {
+  -webkit-transform: none;
+  -moz-transform: none;
+  position: relative;
+  top: -5px;
+}
+/* line 175, ../../app/stylesheets/application.sass */
+#photos-index ul li:nth-child(5n) a {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  right: 5px;
+}
+/* line 180, ../../app/stylesheets/application.sass */
+#photos-index ul li:nth-child(8n) a {
+  position: relative;
+  top: 8px;
+  right: 5px;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+/* line 187, ../../app/stylesheets/application.sass */
+#photos-index ul li:nth-child(11n) a {
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+/* line 191, ../../app/stylesheets/application.sass */
+#photos-index ul li a {
+  float: left;
+  display: block;
+  background: white;
+  margin-top: -15px;
+  margin-left: -15px;
+  padding: 10px;
+  padding-bottom: 15px;
+  font: 14px/14px "Marker Felt";
+  color: #333333;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.15s ease;
+  -moz-transition: -moz-transform 0.15s ease;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+}
+/* line 210, ../../app/stylesheets/application.sass */
+#photos-index ul li a:after {
+  content: attr(title);
+}
+/* line 212, ../../app/stylesheets/application.sass */
+#photos-index ul li a:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
+  position: relative;
+  z-index: 5;
+}
+/* line 219, ../../app/stylesheets/application.sass */
+#photos-index ul li a span {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 15px;
+}
+/* line 225, ../../app/stylesheets/application.sass */
+#photos-index ul li a img {
+  display: block;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+/* line 231, ../../app/stylesheets/application.sass */
+#footer {
+  clear: both;
+  padding-top: 1px;
+  padding-bottom: 50px;
+  margin-left: 310px;
+}
+/* line 237, ../../app/stylesheets/application.sass */
+#footer #copyright {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #292929;
+  color: #666666;
+  text-shadow: 0px 1px 1px black;
+}

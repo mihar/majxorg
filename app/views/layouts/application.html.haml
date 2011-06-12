@@ -1,0 +1,15 @@
+!!! 5
+-# http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither
+-ie_html :class => 'no-js' do
+  = render :partial => 'layouts/head'
+  %body{ :lang => 'en', :id => "#{controller.controller_name}-#{controller.action_name}", :class => "#{controller.controller_name}" }
+    #container
+      %aside#side
+        = render :partial => 'layouts/side'
+      #main{ :role => 'main' }
+        = render :partial => 'layouts/flashes'
+        = yield
+      %footer#footer
+        = render :partial => 'layouts/footer'
+    -# Javascript at the bottom for fast page loading
+    = render :partial => 'layouts/javascripts'

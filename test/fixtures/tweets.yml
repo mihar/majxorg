@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tweet: MyString
+  tweeted_at: 2011-03-20 10:38:12
+
+two:
+  tweet: MyString
+  tweeted_at: 2011-03-20 10:38:12
