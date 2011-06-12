@@ -5,5 +5,6 @@ class Resource
     Post.fetch
     Track.fetch
     Tweet.fetch
+    Location.fetch
   end
 end

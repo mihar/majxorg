@@ -6,6 +6,7 @@ gem 'inherited_resources'
 gem 'haml'
 gem 'compass'
 gem 'html5-boilerplate'
+gem 'whenever'
 
 gem 'httparty'
 gem 'geoip'

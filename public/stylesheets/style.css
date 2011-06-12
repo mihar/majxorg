@@ -678,7 +678,11 @@ body {
 #container section#tweets dt span {
   color: #1d92b5;
 }
-/* line 131, ../../app/stylesheets/application.sass */
+/* line 130, ../../app/stylesheets/application.sass */
+#container section#bookmarks {
+  padding-top: 20px;
+}
+/* line 132, ../../app/stylesheets/application.sass */
 #container section#photos {
   *zoom: 1;
 }
@@ -691,16 +695,16 @@ body {
   overflow: hidden;
   visibility: hidden;
 }
-/* line 133, ../../app/stylesheets/application.sass */
+/* line 134, ../../app/stylesheets/application.sass */
 #container section#photos ul {
   list-style: none;
   margin: 0;
 }
-/* line 136, ../../app/stylesheets/application.sass */
+/* line 137, ../../app/stylesheets/application.sass */
 #container section#photos li {
   float: left;
 }
-/* line 138, ../../app/stylesheets/application.sass */
+/* line 139, ../../app/stylesheets/application.sass */
 #container section#photos li a {
   display: block;
   background: rgba(255, 255, 255, 0.6);
@@ -713,45 +717,45 @@ body {
   -webkit-transition: -webkit-transform 0.15s ease;
   -moz-transition: -moz-transform 0.15s ease;
 }
-/* line 150, ../../app/stylesheets/application.sass */
+/* line 151, ../../app/stylesheets/application.sass */
 #container section#photos li a:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
 }
-/* line 155, ../../app/stylesheets/application.sass */
+/* line 156, ../../app/stylesheets/application.sass */
 #container section#photos li a img {
   display: block;
 }
 
-/* line 161, ../../app/stylesheets/application.sass */
+/* line 162, ../../app/stylesheets/application.sass */
 #photos-index ul li {
   display: inline;
   list-style: none outside;
 }
-/* line 164, ../../app/stylesheets/application.sass */
+/* line 165, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(even) a {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
   margin-top: -25px;
   margin-left: -25px;
 }
-/* line 170, ../../app/stylesheets/application.sass */
+/* line 171, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(3n) a {
   -webkit-transform: none;
   -moz-transform: none;
   position: relative;
   top: -5px;
 }
-/* line 175, ../../app/stylesheets/application.sass */
+/* line 176, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(5n) a {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
   position: relative;
   right: 5px;
 }
-/* line 180, ../../app/stylesheets/application.sass */
+/* line 181, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(8n) a {
   position: relative;
   top: 8px;
@@ -759,13 +763,13 @@ body {
   margin-top: -5px;
   margin-left: -5px;
 }
-/* line 187, ../../app/stylesheets/application.sass */
+/* line 188, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(11n) a {
   position: relative;
   top: 3px;
   left: -5px;
 }
-/* line 191, ../../app/stylesheets/application.sass */
+/* line 192, ../../app/stylesheets/application.sass */
 #photos-index ul li a {
   float: left;
   display: block;
@@ -785,11 +789,11 @@ body {
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
 }
-/* line 210, ../../app/stylesheets/application.sass */
+/* line 211, ../../app/stylesheets/application.sass */
 #photos-index ul li a:after {
   content: attr(title);
 }
-/* line 212, ../../app/stylesheets/application.sass */
+/* line 213, ../../app/stylesheets/application.sass */
 #photos-index ul li a:hover {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
@@ -798,7 +802,7 @@ body {
   position: relative;
   z-index: 5;
 }
-/* line 219, ../../app/stylesheets/application.sass */
+/* line 220, ../../app/stylesheets/application.sass */
 #photos-index ul li a span {
   width: 150px;
   height: 150px;
@@ -806,21 +810,21 @@ body {
   display: block;
   margin-bottom: 15px;
 }
-/* line 225, ../../app/stylesheets/application.sass */
+/* line 226, ../../app/stylesheets/application.sass */
 #photos-index ul li a img {
   display: block;
   margin-top: -25px;
   margin-left: -25px;
 }
 
-/* line 231, ../../app/stylesheets/application.sass */
+/* line 232, ../../app/stylesheets/application.sass */
 #footer {
   clear: both;
   padding-top: 1px;
   padding-bottom: 50px;
   margin-left: 310px;
 }
-/* line 237, ../../app/stylesheets/application.sass */
+/* line 238, ../../app/stylesheets/application.sass */
 #footer #copyright {
   margin-top: 25px;
   padding-top: 25px;
