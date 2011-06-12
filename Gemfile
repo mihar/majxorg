@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.5'
+gem 'rails', '3.0.7'
 
 gem 'inherited_resources'
 gem 'haml'
@@ -19,10 +19,10 @@ gem 'httparty'
 gem 'flickraw'
 
 group :production do
-  gem 'mysql2', '< 0.3'
+  gem 'mysql2'
 end
 
 group :development, :test do
   gem 'capistrano'
-  gem 'sqlite3-ruby', '1.2.5'
+  gem 'sqlite3'
 end
