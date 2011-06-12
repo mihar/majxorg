@@ -1,6 +1,7 @@
+require 'digest/md5'
+
 class Track < ActiveRecord::Base
   validates :time_code, :presence => true, :uniqueness => true
-  validates :played_at, :presence => true, :uniqueness => true
   validates :title, :presence => true
   
   scope :recent, order("played_at DESC").limit(15)
@@ -15,7 +16,7 @@ class Track < ActiveRecord::Base
           new_track.album = track.album
           new_track.url = track.url
           new_track.played_at = track.date
-          new_track.time_code = track.date_uts
+          new_track.time_code = Digest::MD5.hexdigest("#{track.url}#{Time.now.hour}")
           new_track.save
         end
       end
