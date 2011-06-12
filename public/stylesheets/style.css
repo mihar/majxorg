@@ -470,50 +470,60 @@ body {
 }
 
 /* line 7, ../../app/stylesheets/application.sass */
+#head {
+  background: url(/images/topgrad.png) repeat-x;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+}
+
+/* line 15, ../../app/stylesheets/application.sass */
 #side {
   width: 250px;
   float: left;
   position: fixed;
   top: 100px;
 }
-/* line 12, ../../app/stylesheets/application.sass */
+/* line 20, ../../app/stylesheets/application.sass */
 #side #card {
   margin-top: 50px;
 }
-/* line 14, ../../app/stylesheets/application.sass */
+/* line 22, ../../app/stylesheets/application.sass */
 #side #card h1 {
   font-size: 20px;
 }
-/* line 16, ../../app/stylesheets/application.sass */
+/* line 24, ../../app/stylesheets/application.sass */
 #side #card h2 {
   font-weight: normal;
   font-size: 14px;
 }
-/* line 19, ../../app/stylesheets/application.sass */
+/* line 27, ../../app/stylesheets/application.sass */
 #side #card p {
   margin: 10px 0;
   font-size: 14px;
   font-family: Palatino, Times, "Times New Roman", serif;
   font-style: italic;
 }
-/* line 24, ../../app/stylesheets/application.sass */
+/* line 32, ../../app/stylesheets/application.sass */
 #side #location {
   margin-top: 50px;
   padding-left: 32px;
   background: url(/images/icons/location.png) no-repeat 0px 2px;
 }
-/* line 28, ../../app/stylesheets/application.sass */
+/* line 36, ../../app/stylesheets/application.sass */
 #side #location:hover {
   background-position: 0px -25px;
 }
-/* line 30, ../../app/stylesheets/application.sass */
+/* line 38, ../../app/stylesheets/application.sass */
 #side #location em {
   display: block;
   line-height: 10px;
   color: #666666;
   font-size: 10px;
 }
-/* line 35, ../../app/stylesheets/application.sass */
+/* line 43, ../../app/stylesheets/application.sass */
 #side #map {
   margin-top: 10px;
   border: 5px solid #333333;
@@ -522,62 +532,62 @@ body {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
 }
-/* line 42, ../../app/stylesheets/application.sass */
+/* line 50, ../../app/stylesheets/application.sass */
 #side #map img {
   display: block;
 }
-/* line 44, ../../app/stylesheets/application.sass */
+/* line 52, ../../app/stylesheets/application.sass */
 #side #social {
   margin: 0;
   margin-top: 50px;
   padding: 0;
 }
-/* line 48, ../../app/stylesheets/application.sass */
+/* line 56, ../../app/stylesheets/application.sass */
 #side #social li {
   list-style: none;
   padding-left: 32px;
   height: 26px;
   line-height: 26px;
 }
-/* line 53, ../../app/stylesheets/application.sass */
+/* line 61, ../../app/stylesheets/application.sass */
 #side #social li.facebook {
   background: url(/images/icons/facebook.png) no-repeat;
 }
-/* line 55, ../../app/stylesheets/application.sass */
+/* line 63, ../../app/stylesheets/application.sass */
 #side #social li.twitter {
   background: url(/images/icons/twitter.png) no-repeat;
 }
-/* line 57, ../../app/stylesheets/application.sass */
+/* line 65, ../../app/stylesheets/application.sass */
 #side #social li.lastfm {
   background: url(/images/icons/lastfm.png) no-repeat;
 }
-/* line 59, ../../app/stylesheets/application.sass */
+/* line 67, ../../app/stylesheets/application.sass */
 #side #social li.skype {
   background: url(/images/icons/skype.png) no-repeat;
 }
-/* line 61, ../../app/stylesheets/application.sass */
+/* line 69, ../../app/stylesheets/application.sass */
 #side #social li.flickr {
   background: url(/images/icons/flickr.png) no-repeat;
 }
-/* line 63, ../../app/stylesheets/application.sass */
+/* line 71, ../../app/stylesheets/application.sass */
 #side #social li.delicious {
   background: url(/images/icons/delicious.png) no-repeat;
 }
-/* line 65, ../../app/stylesheets/application.sass */
+/* line 73, ../../app/stylesheets/application.sass */
 #side #social li.linkedin {
   background: url(/images/icons/linkedin.png) no-repeat;
 }
-/* line 67, ../../app/stylesheets/application.sass */
+/* line 75, ../../app/stylesheets/application.sass */
 #side #social li:hover {
   background-position: 0px -26px;
 }
 
-/* line 72, ../../app/stylesheets/application.sass */
+/* line 80, ../../app/stylesheets/application.sass */
 #tier_1, #tier_2 {
   margin-top: -4px;
 }
 
-/* line 74, ../../app/stylesheets/application.sass */
+/* line 82, ../../app/stylesheets/application.sass */
 #tier_1 {
   padding-left: 310px;
   padding-top: 100px;
@@ -585,99 +595,99 @@ body {
   float: left;
 }
 
-/* line 80, ../../app/stylesheets/application.sass */
+/* line 88, ../../app/stylesheets/application.sass */
 #tier_2 {
   padding-top: 100px;
   width: 250px;
   float: right;
 }
 
-/* line 86, ../../app/stylesheets/application.sass */
+/* line 94, ../../app/stylesheets/application.sass */
 #container {
   position: relative;
   margin: 0 auto;
   width: 960px;
 }
-/* line 90, ../../app/stylesheets/application.sass */
+/* line 98, ../../app/stylesheets/application.sass */
 #container a {
   color: #1d92b5;
   text-decoration: none;
   text-shadow: 0px 1px 1px black;
 }
-/* line 94, ../../app/stylesheets/application.sass */
+/* line 102, ../../app/stylesheets/application.sass */
 #container a:link {
   color: #1d92b5;
 }
-/* line 96, ../../app/stylesheets/application.sass */
+/* line 104, ../../app/stylesheets/application.sass */
 #container a:visited {
   color: #1d92b5;
 }
-/* line 98, ../../app/stylesheets/application.sass */
+/* line 106, ../../app/stylesheets/application.sass */
 #container a:hover {
   text-decoration: underline;
 }
-/* line 100, ../../app/stylesheets/application.sass */
+/* line 108, ../../app/stylesheets/application.sass */
 #container a:active {
   color: #24bcea;
 }
-/* line 102, ../../app/stylesheets/application.sass */
+/* line 110, ../../app/stylesheets/application.sass */
 #container #header {
   position: relative;
   margin: 75px 0 50px 0;
 }
-/* line 105, ../../app/stylesheets/application.sass */
+/* line 113, ../../app/stylesheets/application.sass */
 #container #header #card {
   position: absolute;
   top: 0;
   right: 0;
   text-align: right;
 }
-/* line 110, ../../app/stylesheets/application.sass */
+/* line 118, ../../app/stylesheets/application.sass */
 #container #header #card h1 {
   font-size: 24px;
 }
-/* line 112, ../../app/stylesheets/application.sass */
+/* line 120, ../../app/stylesheets/application.sass */
 #container #header #card p {
   margin-top: 20px;
   font-family: Palatino, Times, "Times New Roman", serif;
   font-style: italic;
   font-size: 16px;
 }
-/* line 118, ../../app/stylesheets/application.sass */
+/* line 126, ../../app/stylesheets/application.sass */
 #container section {
   margin-bottom: 25px;
   border-bottom: 1px solid #292929;
 }
-/* line 121, ../../app/stylesheets/application.sass */
+/* line 129, ../../app/stylesheets/application.sass */
 #container section .date {
   font-size: 10px;
   text-align: right;
   color: #666666;
   margin-bottom: 19px;
 }
-/* line 127, ../../app/stylesheets/application.sass */
+/* line 135, ../../app/stylesheets/application.sass */
 #container section:hover h1 {
   text-shadow: 0px 0px 5px #1d92b5;
 }
-/* line 129, ../../app/stylesheets/application.sass */
+/* line 137, ../../app/stylesheets/application.sass */
 #container section h1 {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 25px;
 }
-/* line 136, ../../app/stylesheets/application.sass */
+/* line 144, ../../app/stylesheets/application.sass */
 #container section#tweets dt span {
   color: #1d92b5;
 }
-/* line 139, ../../app/stylesheets/application.sass */
+/* line 147, ../../app/stylesheets/application.sass */
 #container section#tracks {
   border: 0;
 }
-/* line 141, ../../app/stylesheets/application.sass */
+/* line 149, ../../app/stylesheets/application.sass */
 #container section#bookmarks {
   border: 0;
 }
-/* line 143, ../../app/stylesheets/application.sass */
+/* line 151, ../../app/stylesheets/application.sass */
 #container section#photos {
   *zoom: 1;
   padding-bottom: 25px;
@@ -688,16 +698,16 @@ body {
   display: table;
   clear: both;
 }
-/* line 146, ../../app/stylesheets/application.sass */
+/* line 154, ../../app/stylesheets/application.sass */
 #container section#photos ul {
   list-style: none;
   margin: 0;
 }
-/* line 149, ../../app/stylesheets/application.sass */
+/* line 157, ../../app/stylesheets/application.sass */
 #container section#photos li {
   float: left;
 }
-/* line 151, ../../app/stylesheets/application.sass */
+/* line 159, ../../app/stylesheets/application.sass */
 #container section#photos li a {
   display: block;
   background: rgba(255, 255, 255, 0.6);
@@ -708,7 +718,7 @@ body {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
 }
-/* line 161, ../../app/stylesheets/application.sass */
+/* line 169, ../../app/stylesheets/application.sass */
 #container section#photos li a:hover {
   -moz-transition: -moz-transform 0.15s;
   -webkit-transform: scale(1.1);
@@ -716,38 +726,38 @@ body {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
 }
-/* line 167, ../../app/stylesheets/application.sass */
+/* line 175, ../../app/stylesheets/application.sass */
 #container section#photos li a img {
   display: block;
 }
 
-/* line 173, ../../app/stylesheets/application.sass */
+/* line 181, ../../app/stylesheets/application.sass */
 #photos-index ul li {
   display: inline;
   list-style: none outside;
 }
-/* line 176, ../../app/stylesheets/application.sass */
+/* line 184, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(even) a {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
   margin-top: -25px;
   margin-left: -25px;
 }
-/* line 182, ../../app/stylesheets/application.sass */
+/* line 190, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(3n) a {
   -webkit-transform: none;
   -moz-transform: none;
   position: relative;
   top: -5px;
 }
-/* line 187, ../../app/stylesheets/application.sass */
+/* line 195, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(5n) a {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
   position: relative;
   right: 5px;
 }
-/* line 192, ../../app/stylesheets/application.sass */
+/* line 200, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(8n) a {
   position: relative;
   top: 8px;
@@ -755,13 +765,13 @@ body {
   margin-top: -5px;
   margin-left: -5px;
 }
-/* line 199, ../../app/stylesheets/application.sass */
+/* line 207, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(11n) a {
   position: relative;
   top: 3px;
   left: -5px;
 }
-/* line 203, ../../app/stylesheets/application.sass */
+/* line 211, ../../app/stylesheets/application.sass */
 #photos-index ul li a {
   float: left;
   display: block;
@@ -781,11 +791,11 @@ body {
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
 }
-/* line 222, ../../app/stylesheets/application.sass */
+/* line 230, ../../app/stylesheets/application.sass */
 #photos-index ul li a:after {
   content: attr(title);
 }
-/* line 224, ../../app/stylesheets/application.sass */
+/* line 232, ../../app/stylesheets/application.sass */
 #photos-index ul li a:hover {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
@@ -794,7 +804,7 @@ body {
   position: relative;
   z-index: 5;
 }
-/* line 231, ../../app/stylesheets/application.sass */
+/* line 239, ../../app/stylesheets/application.sass */
 #photos-index ul li a span {
   width: 150px;
   height: 150px;
@@ -802,21 +812,21 @@ body {
   display: block;
   margin-bottom: 15px;
 }
-/* line 237, ../../app/stylesheets/application.sass */
+/* line 245, ../../app/stylesheets/application.sass */
 #photos-index ul li a img {
   display: block;
   margin-top: -25px;
   margin-left: -25px;
 }
 
-/* line 243, ../../app/stylesheets/application.sass */
+/* line 251, ../../app/stylesheets/application.sass */
 #footer {
   clear: both;
   padding-top: 1px;
   padding-bottom: 50px;
   margin-left: 310px;
 }
-/* line 249, ../../app/stylesheets/application.sass */
+/* line 257, ../../app/stylesheets/application.sass */
 #footer #copyright {
   margin-top: 25px;
   padding-top: 25px;

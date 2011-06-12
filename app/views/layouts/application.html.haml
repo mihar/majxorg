@@ -3,6 +3,7 @@
 -ie_html :class => 'no-js' do
   = render :partial => 'layouts/head'
   %body{ :lang => 'en', :id => "#{controller.controller_name}-#{controller.action_name}", :class => "#{controller.controller_name}" }
+    #head
     #container
       %aside#side
         = render :partial => 'layouts/side'
