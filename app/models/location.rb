@@ -29,6 +29,15 @@ class Location < ActiveRecord::Base
     end
   end
   
+  def static_map
+    map_url = "http://maps.google.com/maps/api/staticmap?"
+    map_url += "zoom=12&markers=size:mid|label:M|"
+    map_url += lng.to_s
+    map_url += ","
+    map_url += lat.to_s
+    map_url += "&size=240x240&sensor=false"
+  end
+  
   def to_s
     reverse
   end
