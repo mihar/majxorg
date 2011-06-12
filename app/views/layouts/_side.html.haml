@@ -10,13 +10,20 @@
 
 #location
   You're around
-  %strong== #{current_visitor_distance.round} km
+  %strong
+    = current_visitor_distance.round
+    - if ["United States", "Canada", "United Kingdom"].include?(current_visitor_location.country) 
+      mi
+    - else
+      km
   away.
   %em
     I'm at
     = current_location
   
-#map{:style => "display: none"}= image_tag current_location.static_map
+#map{:style => "display: none"}
+  = image_tag current_location.static_map
+  = link_to "&times; Hide".html_safe, "#", :id => "location_hide"
 
 %ul#social
   %li.facebook= link_to "Facebook", "http://facebook.com/mihar"

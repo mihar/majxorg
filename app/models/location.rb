@@ -3,10 +3,7 @@ class Location < ActiveRecord::Base
   validates :lat, :presence => true
   validates :lng, :presence => true
 
-  acts_as_mappable :default_units => :kms, 
-                    :default_formula => :sphere, 
-                    :lat_column_name => :lat,
-                    :lng_column_name => :lng
+  acts_as_mappable
 
   default_scope order("located_at DESC")
   scope :recent, limit(5)

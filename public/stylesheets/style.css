@@ -483,7 +483,7 @@ body {
 #side {
   width: 250px;
   float: left;
-  position: fixed;
+  position: absolute;
   top: 100px;
 }
 /* line 20, ../../app/stylesheets/application.sass */
@@ -537,57 +537,65 @@ body {
   display: block;
 }
 /* line 52, ../../app/stylesheets/application.sass */
+#side #map a {
+  display: block;
+  float: right;
+  margin-top: 10px;
+  color: #cccccc;
+  font-size: 10px;
+}
+/* line 58, ../../app/stylesheets/application.sass */
 #side #social {
   margin: 0;
   margin-top: 50px;
   padding: 0;
 }
-/* line 56, ../../app/stylesheets/application.sass */
+/* line 62, ../../app/stylesheets/application.sass */
 #side #social li {
   list-style: none;
   padding-left: 32px;
   height: 26px;
   line-height: 26px;
 }
-/* line 61, ../../app/stylesheets/application.sass */
+/* line 67, ../../app/stylesheets/application.sass */
 #side #social li.facebook {
   background: url(/images/icons/facebook.png) no-repeat;
 }
-/* line 63, ../../app/stylesheets/application.sass */
+/* line 69, ../../app/stylesheets/application.sass */
 #side #social li.twitter {
   background: url(/images/icons/twitter.png) no-repeat;
 }
-/* line 65, ../../app/stylesheets/application.sass */
+/* line 71, ../../app/stylesheets/application.sass */
 #side #social li.lastfm {
   background: url(/images/icons/lastfm.png) no-repeat;
 }
-/* line 67, ../../app/stylesheets/application.sass */
+/* line 73, ../../app/stylesheets/application.sass */
 #side #social li.skype {
   background: url(/images/icons/skype.png) no-repeat;
 }
-/* line 69, ../../app/stylesheets/application.sass */
+/* line 75, ../../app/stylesheets/application.sass */
 #side #social li.flickr {
   background: url(/images/icons/flickr.png) no-repeat;
 }
-/* line 71, ../../app/stylesheets/application.sass */
+/* line 77, ../../app/stylesheets/application.sass */
 #side #social li.delicious {
   background: url(/images/icons/delicious.png) no-repeat;
 }
-/* line 73, ../../app/stylesheets/application.sass */
+/* line 79, ../../app/stylesheets/application.sass */
 #side #social li.linkedin {
   background: url(/images/icons/linkedin.png) no-repeat;
 }
-/* line 75, ../../app/stylesheets/application.sass */
+/* line 81, ../../app/stylesheets/application.sass */
 #side #social li:hover {
   background-position: 0px -26px;
 }
 
-/* line 80, ../../app/stylesheets/application.sass */
+/* line 86, ../../app/stylesheets/application.sass */
 #tier_1, #tier_2 {
   margin-top: -4px;
 }
 
-/* line 82, ../../app/stylesheets/application.sass */
+/* line 88, ../../app/stylesheets/application.sass */
 #tier_1 {
   padding-left: 310px;
   padding-top: 100px;
@@ -595,99 +603,99 @@ body {
   float: left;
 }
 
-/* line 88, ../../app/stylesheets/application.sass */
+/* line 94, ../../app/stylesheets/application.sass */
 #tier_2 {
   padding-top: 100px;
   width: 250px;
   float: right;
 }
 
-/* line 94, ../../app/stylesheets/application.sass */
+/* line 100, ../../app/stylesheets/application.sass */
 #container {
   position: relative;
   margin: 0 auto;
   width: 960px;
 }
-/* line 98, ../../app/stylesheets/application.sass */
+/* line 104, ../../app/stylesheets/application.sass */
 #container a {
   color: #1d92b5;
   text-decoration: none;
   text-shadow: 0px 1px 1px black;
 }
-/* line 102, ../../app/stylesheets/application.sass */
+/* line 108, ../../app/stylesheets/application.sass */
 #container a:link {
   color: #1d92b5;
 }
-/* line 104, ../../app/stylesheets/application.sass */
+/* line 110, ../../app/stylesheets/application.sass */
 #container a:visited {
   color: #1d92b5;
 }
-/* line 106, ../../app/stylesheets/application.sass */
+/* line 112, ../../app/stylesheets/application.sass */
 #container a:hover {
   text-decoration: underline;
 }
-/* line 108, ../../app/stylesheets/application.sass */
+/* line 114, ../../app/stylesheets/application.sass */
 #container a:active {
   color: #24bcea;
 }
-/* line 110, ../../app/stylesheets/application.sass */
+/* line 116, ../../app/stylesheets/application.sass */
 #container #header {
   position: relative;
   margin: 75px 0 50px 0;
 }
-/* line 113, ../../app/stylesheets/application.sass */
+/* line 119, ../../app/stylesheets/application.sass */
 #container #header #card {
   position: absolute;
   top: 0;
   right: 0;
   text-align: right;
 }
-/* line 118, ../../app/stylesheets/application.sass */
+/* line 124, ../../app/stylesheets/application.sass */
 #container #header #card h1 {
   font-size: 24px;
 }
-/* line 120, ../../app/stylesheets/application.sass */
+/* line 126, ../../app/stylesheets/application.sass */
 #container #header #card p {
   margin-top: 20px;
   font-family: Palatino, Times, "Times New Roman", serif;
   font-style: italic;
   font-size: 16px;
 }
-/* line 126, ../../app/stylesheets/application.sass */
+/* line 132, ../../app/stylesheets/application.sass */
 #container section {
   margin-bottom: 25px;
   border-bottom: 1px solid #292929;
 }
-/* line 129, ../../app/stylesheets/application.sass */
+/* line 135, ../../app/stylesheets/application.sass */
 #container section .date {
   font-size: 10px;
   text-align: right;
   color: #666666;
   margin-bottom: 19px;
 }
-/* line 135, ../../app/stylesheets/application.sass */
+/* line 141, ../../app/stylesheets/application.sass */
 #container section:hover h1 {
   text-shadow: 0px 0px 5px #1d92b5;
 }
-/* line 137, ../../app/stylesheets/application.sass */
+/* line 143, ../../app/stylesheets/application.sass */
 #container section h1 {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 25px;
 }
-/* line 144, ../../app/stylesheets/application.sass */
+/* line 150, ../../app/stylesheets/application.sass */
 #container section#tweets dt span {
   color: #1d92b5;
 }
-/* line 147, ../../app/stylesheets/application.sass */
+/* line 153, ../../app/stylesheets/application.sass */
 #container section#tracks {
   border: 0;
 }
-/* line 149, ../../app/stylesheets/application.sass */
+/* line 155, ../../app/stylesheets/application.sass */
 #container section#bookmarks {
   border: 0;
 }
-/* line 151, ../../app/stylesheets/application.sass */
+/* line 157, ../../app/stylesheets/application.sass */
 #container section#photos {
   *zoom: 1;
   padding-bottom: 25px;
@@ -698,16 +706,16 @@ body {
   display: table;
   clear: both;
 }
-/* line 154, ../../app/stylesheets/application.sass */
+/* line 160, ../../app/stylesheets/application.sass */
 #container section#photos ul {
   list-style: none;
   margin: 0;
 }
-/* line 157, ../../app/stylesheets/application.sass */
+/* line 163, ../../app/stylesheets/application.sass */
 #container section#photos li {
   float: left;
 }
-/* line 159, ../../app/stylesheets/application.sass */
+/* line 165, ../../app/stylesheets/application.sass */
 #container section#photos li a {
   display: block;
   background: rgba(255, 255, 255, 0.6);
@@ -718,7 +726,7 @@ body {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.75);
 }
-/* line 169, ../../app/stylesheets/application.sass */
+/* line 175, ../../app/stylesheets/application.sass */
 #container section#photos li a:hover {
   -moz-transition: -moz-transform 0.15s;
   -webkit-transform: scale(1.1);
@@ -726,38 +734,38 @@ body {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
 }
-/* line 175, ../../app/stylesheets/application.sass */
+/* line 181, ../../app/stylesheets/application.sass */
 #container section#photos li a img {
   display: block;
 }
 
-/* line 181, ../../app/stylesheets/application.sass */
+/* line 187, ../../app/stylesheets/application.sass */
 #photos-index ul li {
   display: inline;
   list-style: none outside;
 }
-/* line 184, ../../app/stylesheets/application.sass */
+/* line 190, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(even) a {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
   margin-top: -25px;
   margin-left: -25px;
 }
-/* line 190, ../../app/stylesheets/application.sass */
+/* line 196, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(3n) a {
   -webkit-transform: none;
   -moz-transform: none;
   position: relative;
   top: -5px;
 }
-/* line 195, ../../app/stylesheets/application.sass */
+/* line 201, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(5n) a {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
   position: relative;
   right: 5px;
 }
-/* line 200, ../../app/stylesheets/application.sass */
+/* line 206, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(8n) a {
   position: relative;
   top: 8px;
@@ -765,13 +773,13 @@ body {
   margin-top: -5px;
   margin-left: -5px;
 }
-/* line 207, ../../app/stylesheets/application.sass */
+/* line 213, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(11n) a {
   position: relative;
   top: 3px;
   left: -5px;
 }
-/* line 211, ../../app/stylesheets/application.sass */
+/* line 217, ../../app/stylesheets/application.sass */
 #photos-index ul li a {
   float: left;
   display: block;
@@ -791,11 +799,11 @@ body {
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
 }
-/* line 230, ../../app/stylesheets/application.sass */
+/* line 236, ../../app/stylesheets/application.sass */
 #photos-index ul li a:after {
   content: attr(title);
 }
-/* line 232, ../../app/stylesheets/application.sass */
+/* line 238, ../../app/stylesheets/application.sass */
 #photos-index ul li a:hover {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
@@ -804,7 +812,7 @@ body {
   position: relative;
   z-index: 5;
 }
-/* line 239, ../../app/stylesheets/application.sass */
+/* line 245, ../../app/stylesheets/application.sass */
 #photos-index ul li a span {
   width: 150px;
   height: 150px;
@@ -812,21 +820,21 @@ body {
   display: block;
   margin-bottom: 15px;
 }
-/* line 245, ../../app/stylesheets/application.sass */
+/* line 251, ../../app/stylesheets/application.sass */
 #photos-index ul li a img {
   display: block;
   margin-top: -25px;
   margin-left: -25px;
 }
 
-/* line 251, ../../app/stylesheets/application.sass */
+/* line 257, ../../app/stylesheets/application.sass */
 #footer {
   clear: both;
   padding-top: 1px;
   padding-bottom: 50px;
   margin-left: 310px;
 }
-/* line 257, ../../app/stylesheets/application.sass */
+/* line 263, ../../app/stylesheets/application.sass */
 #footer #copyright {
   margin-top: 25px;
   padding-top: 25px;
