@@ -19,10 +19,10 @@ gem 'httparty'
 gem 'flickraw'
 
 group :production do
-  gem 'mysql2'
+  gem 'mysql2', "< 0.3"
 end
 
 group :development, :test do
   gem 'capistrano'
-  gem 'sqlite3'
+  gem 'sqlite3-ruby'
 end
