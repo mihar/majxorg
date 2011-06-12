@@ -3,7 +3,7 @@ class Track < ActiveRecord::Base
   validates :played_at, :presence => true, :uniqueness => true
   validates :title, :presence => true
   
-  scope :recent, order("played_at DESC").limit(10)
+  scope :recent, order("played_at DESC").limit(15)
   
   def self.fetch
     if user = Scrobbler::User.new('majx')
