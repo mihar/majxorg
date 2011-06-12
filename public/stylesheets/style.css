@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/* line 14, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+/* line 14, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
@@ -13,36 +12,35 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
-/* line 24, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+/* line 23, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 28, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+/* line 27, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 31, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+/* line 30, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
-/* line 33, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+/* line 32, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
 ins {
   background-color: #ff9;
   color: #000;
   text-decoration: none;
 }
 
-/* line 35, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+/* line 34, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
 mark {
   background-color: #ff9;
   color: #000;
@@ -50,24 +48,24 @@ mark {
   font-weight: bold;
 }
 
-/* line 37, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+/* line 36, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 39, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+/* line 38, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 41, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+/* line 40, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 43, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
+/* line 42, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_reset.scss */
 hr {
   display: block;
   height: 1px;
@@ -77,12 +75,7 @@ hr {
   padding: 0;
 }
 
-/* line 45, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_reset.scss */
-input, select {
-  vertical-align: middle;
-}
-
-/* line 11, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_fonts.scss */
+/* line 11, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_fonts.scss */
 body {
   font-size: 14px;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -90,37 +83,34 @@ body {
   *font-size: small;
 }
 
-/* line 18, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_fonts.scss */
-select, input, textarea, button {
-  font: 99% Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
-/* line 23, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_fonts.scss */
+/* line 20, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_fonts.scss */
 pre, code, kbd, samp {
   font-family: monospace, sans-serif;
 }
 
-/* line 15, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 15, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 html {
   overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
-/* line 17, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 17, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 ul, ol {
   margin-left: 2em;
 }
 
-/* line 18, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 18, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 20, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
-td, td img {
+/* line 20, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+td {
   vertical-align: top;
 }
 
-/* line 22, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 22, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 sub {
   font-size: 75%;
   line-height: 0;
@@ -128,7 +118,7 @@ sub {
   bottom: -0.25em;
 }
 
-/* line 24, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 24, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 sup {
   font-size: 75%;
   line-height: 0;
@@ -136,98 +126,84 @@ sup {
   top: -0.5em;
 }
 
-/* line 26, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
-textarea {
-  overflow: auto;
-}
-
-/* line 57, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 53, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 a:hover, a:active {
   outline: none;
 }
 
-/* line 62, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 58, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
-  white-space: pre-line;
   word-wrap: break-word;
   padding: 15px;
 }
 
-/* line 71, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
-input[type="radio"] {
-  vertical-align: text-bottom;
-}
-
-/* line 72, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
-input[type="checkbox"] {
-  vertical-align: bottom;
-}
-
-/* line 73, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
-.ie7 input[type="checkbox"] {
-  vertical-align: baseline;
-}
-
-/* line 74, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
-.ie6 input {
-  vertical-align: text-bottom;
-}
-
-/* line 79, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 71, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 label, input[type="button"], input[type="submit"], input[type="image"], button {
   cursor: pointer;
 }
 
-/* line 84, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 80, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 button, input, select, textarea {
+  width: auto;
+  overflow: visible;
   margin: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+  vertical-align: baseline;
 }
 
-/* line 91, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 84, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+textarea {
+  overflow: auto;
+  vertical-align: text-top;
+}
+
+/* line 88, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 99, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 ::-moz-selection {
   background: #ff5e99;
   color: white;
   text-shadow: none;
 }
 
-/* line 92, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 100, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 ::selection {
   background: #ff5e99;
   color: white;
   text-shadow: none;
 }
 
-/* line 97, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 105, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 a:link {
   -webkit-tap-highlight-color: #ff5e99;
 }
 
-/* line 108, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
-button {
-  width: auto;
-  overflow: visible;
-}
-
-/* line 112, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 118, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 .ie7 img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 114, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 120, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 .ie6 legend, .ie7 legend {
   margin-left: -7px;
 }
 
-/* line 119, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_styles.scss */
+/* line 125, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 nav ul, nav li {
   margin: 0;
   list-style: none;
   list-style-image: none;
 }
 
-/* line 10, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_helpers.scss */
+/* line 10, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
 .ir {
   text-indent: -119988px;
   overflow: hidden;
@@ -236,13 +212,13 @@ nav ul, nav li {
   background-repeat: no-repeat;
 }
 
-/* line 12, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_helpers.scss */
+/* line 12, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
 .hidden {
   display: none;
   visibility: hidden;
 }
 
-/* line 14, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_helpers.scss */
+/* line 14, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -253,7 +229,7 @@ nav ul, nav li {
   position: absolute;
   width: 1px;
 }
-/* line 50, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_helpers.scss */
+/* line 50, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -263,18 +239,18 @@ nav ul, nav li {
   width: auto;
 }
 
-/* line 16, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_helpers.scss */
+/* line 16, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
 .clearfix {
-  *zoom: 1;
+  zoom: 1;
 }
-/* line 22, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 61, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 62, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_helpers.scss */
 .clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
 
 /* line 8, ../../app/stylesheets/partials/_page.sass */
@@ -315,10 +291,10 @@ input:invalid, textarea:invalid {
   -ms-border-radius: 1px;
   -khtml-border-radius: 1px;
   border-radius: 1px;
-  -moz-box-shadow: red 0 0 5px 0;
-  -webkit-box-shadow: red 0 0 5px 0;
-  -o-box-shadow: red 0 0 5px 0;
-  box-shadow: red 0 0 5px 0;
+  -moz-box-shadow: 0 0 5px 0 red;
+  -webkit-box-shadow: 0 0 5px 0 red;
+  -o-box-shadow: 0 0 5px 0 red;
+  box-shadow: 0 0 5px 0 red;
 }
 
 /* line 42, ../../app/stylesheets/partials/_page.sass */
@@ -328,7 +304,7 @@ input:invalid, textarea:invalid {
 }
 
 @media print {
-  /* line 24, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  /* line 10, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -337,62 +313,63 @@ input:invalid, textarea:invalid {
     -ms-filter: none !important;
   }
 
-  /* line 26, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  /* line 12, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   a, a:visited {
     color: #444 !important;
     text-decoration: underline;
   }
 
-  /* line 27, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  /* line 13, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 28, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  /* line 14, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 29, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  /* line 15, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
-  /* line 30, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  /* line 16, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 31, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  /* line 17, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 32, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  /* line 18, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   tr, img {
     page-break-inside: avoid;
+  }
+
+  /* line 19, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
+  img {
+    max-width: 100% !important;
   }
 
   @page {
     margin: 0.5cm;
 }
 
-  /* line 34, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  /* line 21, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 35, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-0.3.2/stylesheets/html5-boilerplate/_media.scss */
+  /* line 22, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_media.scss */
   h2, h3 {
     page-break-after: avoid;
   }
 }
-
-@media all and (orientation:portrait) {}
-@media all and (orientation:landscape) {}
-@media screen and (max-device-width: 480px) {}
 /* SLIMBOX */
 /* line 3, ../../app/stylesheets/partials/_slimbox2.sass */
 #lbOverlay {
@@ -656,55 +633,58 @@ body {
 /* line 109, ../../app/stylesheets/application.sass */
 #container section {
   margin-bottom: 25px;
+  border-bottom: 1px solid #292929;
 }
-/* line 111, ../../app/stylesheets/application.sass */
+/* line 112, ../../app/stylesheets/application.sass */
 #container section .date {
   font-size: 10px;
   text-align: right;
   color: #666666;
   margin-bottom: 19px;
 }
-/* line 117, ../../app/stylesheets/application.sass */
+/* line 118, ../../app/stylesheets/application.sass */
 #container section:hover h1 {
   text-shadow: 0px 0px 5px #1d92b5;
 }
-/* line 119, ../../app/stylesheets/application.sass */
+/* line 120, ../../app/stylesheets/application.sass */
 #container section h1 {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 25px;
 }
-/* line 126, ../../app/stylesheets/application.sass */
+/* line 127, ../../app/stylesheets/application.sass */
 #container section#tweets dt span {
   color: #1d92b5;
 }
 /* line 130, ../../app/stylesheets/application.sass */
-#container section#bookmarks {
-  padding-top: 20px;
+#container section#tracks {
+  border: 0;
 }
 /* line 132, ../../app/stylesheets/application.sass */
+#container section#bookmarks {
+  padding-top: 20px;
+  border: 0;
+}
+/* line 135, ../../app/stylesheets/application.sass */
 #container section#photos {
   *zoom: 1;
 }
-/* line 22, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../.rvm/gems/ree-1.8.7-2011.03@majx/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #container section#photos:after {
-  content: "\0020";
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
-  overflow: hidden;
-  visibility: hidden;
 }
-/* line 134, ../../app/stylesheets/application.sass */
+/* line 137, ../../app/stylesheets/application.sass */
 #container section#photos ul {
   list-style: none;
   margin: 0;
 }
-/* line 137, ../../app/stylesheets/application.sass */
+/* line 140, ../../app/stylesheets/application.sass */
 #container section#photos li {
   float: left;
 }
-/* line 139, ../../app/stylesheets/application.sass */
+/* line 142, ../../app/stylesheets/application.sass */
 #container section#photos li a {
   display: block;
   background: rgba(255, 255, 255, 0.6);
@@ -717,45 +697,45 @@ body {
   -webkit-transition: -webkit-transform 0.15s ease;
   -moz-transition: -moz-transform 0.15s ease;
 }
-/* line 151, ../../app/stylesheets/application.sass */
+/* line 154, ../../app/stylesheets/application.sass */
 #container section#photos li a:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.95);
 }
-/* line 156, ../../app/stylesheets/application.sass */
+/* line 159, ../../app/stylesheets/application.sass */
 #container section#photos li a img {
   display: block;
 }
 
-/* line 162, ../../app/stylesheets/application.sass */
+/* line 165, ../../app/stylesheets/application.sass */
 #photos-index ul li {
   display: inline;
   list-style: none outside;
 }
-/* line 165, ../../app/stylesheets/application.sass */
+/* line 168, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(even) a {
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
   margin-top: -25px;
   margin-left: -25px;
 }
-/* line 171, ../../app/stylesheets/application.sass */
+/* line 174, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(3n) a {
   -webkit-transform: none;
   -moz-transform: none;
   position: relative;
   top: -5px;
 }
-/* line 176, ../../app/stylesheets/application.sass */
+/* line 179, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(5n) a {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
   position: relative;
   right: 5px;
 }
-/* line 181, ../../app/stylesheets/application.sass */
+/* line 184, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(8n) a {
   position: relative;
   top: 8px;
@@ -763,13 +743,13 @@ body {
   margin-top: -5px;
   margin-left: -5px;
 }
-/* line 188, ../../app/stylesheets/application.sass */
+/* line 191, ../../app/stylesheets/application.sass */
 #photos-index ul li:nth-child(11n) a {
   position: relative;
   top: 3px;
   left: -5px;
 }
-/* line 192, ../../app/stylesheets/application.sass */
+/* line 195, ../../app/stylesheets/application.sass */
 #photos-index ul li a {
   float: left;
   display: block;
@@ -789,11 +769,11 @@ body {
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
 }
-/* line 211, ../../app/stylesheets/application.sass */
+/* line 214, ../../app/stylesheets/application.sass */
 #photos-index ul li a:after {
   content: attr(title);
 }
-/* line 213, ../../app/stylesheets/application.sass */
+/* line 216, ../../app/stylesheets/application.sass */
 #photos-index ul li a:hover {
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
@@ -802,7 +782,7 @@ body {
   position: relative;
   z-index: 5;
 }
-/* line 220, ../../app/stylesheets/application.sass */
+/* line 223, ../../app/stylesheets/application.sass */
 #photos-index ul li a span {
   width: 150px;
   height: 150px;
@@ -810,21 +790,21 @@ body {
   display: block;
   margin-bottom: 15px;
 }
-/* line 226, ../../app/stylesheets/application.sass */
+/* line 229, ../../app/stylesheets/application.sass */
 #photos-index ul li a img {
   display: block;
   margin-top: -25px;
   margin-left: -25px;
 }
 
-/* line 232, ../../app/stylesheets/application.sass */
+/* line 235, ../../app/stylesheets/application.sass */
 #footer {
   clear: both;
   padding-top: 1px;
   padding-bottom: 50px;
   margin-left: 310px;
 }
-/* line 238, ../../app/stylesheets/application.sass */
+/* line 241, ../../app/stylesheets/application.sass */
 #footer #copyright {
   margin-top: 25px;
   padding-top: 25px;

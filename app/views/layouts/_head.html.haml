@@ -13,9 +13,11 @@
   
   -# Mobile viewport optimized: j.mp/bplateviewport
   %meta{ :content => "width=device-width, initial-scale=1.0", :name => "viewport" }/
+
+  %link{:rel => "image_src", :href => "/images/majx_logo_black.png"}/
   
   -# Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references
-  -# %link{ :href => "/favicon.ico", :rel => "shortcut icon" }/
+  %link{ :href => "/favicon.ico", :rel => "shortcut icon" }/
   -# %link{ :href => "/apple-touch-icon.png", :rel => "apple-touch-icon" }/
   
   = render :partial => 'layouts/stylesheets'
