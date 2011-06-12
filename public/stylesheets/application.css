@@ -1,23 +1,23 @@
 /*
 Syntax error: Undefined mixin 'serif'.
-        on line 30 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass, in `serif'
-        from line 30 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass
+        on line 32 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass, in `serif'
+        from line 32 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass
 
-25:       font-weight: normal
-26:       font-size: 14px
-27:     p
-28:       margin: 10px 0
-29:       font-size: 14px
-30:       +serif
-31:       +italic
-32:   #location
-33:     margin-top: 50px
-34:     padding-left: 32px
-35:     background: url(/images/icons/location.png) no-repeat 0px 2px
+27:       font-weight: normal
+28:       font-size: 14px
+29:     p
+30:       margin: 10px 0
+31:       font-size: 14px
+32:       +serif
+33:       +italic
+34:   #location
+35:     margin-top: 50px
+36:     padding-left: 32px
+37:     background: url(/images/icons/location.png) no-repeat 0px 2px
 
 Backtrace:
-/Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass:30:in `serif'
-/Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass:30
+/Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass:32:in `serif'
+/Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass:32
 /Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/perform.rb:169:in `visit_mixin'
 /Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
 /Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/sass-3.1.2/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
@@ -122,4 +122,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'serif'.\A         on line 30 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass, in `serif'\A         from line 30 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass\A \A 25:       font-weight: normal\A 26:       font-size: 14px\A 27:     p\A 28:       margin: 10px 0\A 29:       font-size: 14px\A 30:       +serif\A 31:       +italic\A 32:   #location\A 33:     margin-top: 50px\A 34:     padding-left: 32px\A 35:     background: url(/images/icons/location.png) no-repeat 0px 2px"; }
+  content: "Syntax error: Undefined mixin 'serif'.\A         on line 32 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass, in `serif'\A         from line 32 of /Users/mihar/Work/majx.org/v8/app/stylesheets/application.sass\A \A 27:       font-weight: normal\A 28:       font-size: 14px\A 29:     p\A 30:       margin: 10px 0\A 31:       font-size: 14px\A 32:       +serif\A 33:       +italic\A 34:   #location\A 35:     margin-top: 50px\A 36:     padding-left: 32px\A 37:     background: url(/images/icons/location.png) no-repeat 0px 2px"; }
