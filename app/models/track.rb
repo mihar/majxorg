@@ -1,5 +1,6 @@
 class Track < ActiveRecord::Base
   validates :time_code, :presence => true, :uniqueness => true
+  validates :played_at, :presence => true, :uniqueness => true
   validates :title, :presence => true
   
   scope :recent, order("played_at DESC").limit(10)
