@@ -472,7 +472,7 @@ body {
 /* line 7, ../../app/stylesheets/application.sass */
 #head {
   background: url(/images/topgrad.png) repeat-x;
-  border-top: 3px solid #1d92b5;
+  border-top: 4px solid #1d92b5;
   position: fixed;
   top: 0;
   left: 0;
