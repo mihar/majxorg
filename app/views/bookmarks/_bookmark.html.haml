@@ -1,6 +1,6 @@
 %dt= link_to bookmark.title, bookmark.url
 - if bookmark.description
-  %dd.description= bookmark.description
+  %dd.description= raw bookmark.description
 %dd.date
   = time_ago_in_words bookmark.posted_at
   ago
