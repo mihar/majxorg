@@ -16,7 +16,7 @@ class Track < ActiveRecord::Base
           new_track.album = track.album
           new_track.url = track.url
           new_track.played_at = track.date + 2.hours
-          new_track.time_code = Digest::MD5.hexdigest("#{track.url}#{Time.now.hour}")
+          new_track.time_code = Digest::MD5.hexdigest("#{track.url}#{track.date.hour}")
           new_track.save
         end
       end
