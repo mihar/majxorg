@@ -5,7 +5,7 @@ class Location < ActiveRecord::Base
 
   acts_as_mappable
 
-  default_scope order("located_at DESC")
+  default_scope order(:located_at)
   scope :recent, limit(5)
 
   def self.fetch
