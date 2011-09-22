@@ -28,12 +28,17 @@ namespace :deploy do
   task :link_db do
     run "ln -s #{shared_path}/config/database.yml #{current_path}/config/database.yml"
   end
+  task :link_config do
+    run "ln -s #{shared_path}/config/services.yml #{current_path}/config/services.yml"
+  end
 end
 
 # Link Geo DB.
 after "deploy:update", "deploy:link_geodb"
 # Link DB.
 after "deploy:update", "deploy:link_db"
+# Link config.
+after "deploy:update", "deploy:link_config"
 
 require 'config/boot'
 
