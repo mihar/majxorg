@@ -14,7 +14,7 @@ gem 'geokit'
 
 gem 'twitter'
 gem 'scrobbler'
-gem 'tumblr-api', :require => 'tumblr'
+gem 'tumblr-api', :require => 'tumblr', :path => "/Users/mihar/Code/tumblr"
 gem 'httparty'
 gem 'flickraw'
 

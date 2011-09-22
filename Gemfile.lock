@@ -1,3 +1,10 @@
+PATH
+  remote: /Users/mihar/Code/tumblr
+  specs:
+    tumblr-api (0.1.4)
+      activesupport
+      httparty
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -43,7 +50,6 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    crack (0.1.8)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     faraday (0.6.1)
@@ -64,8 +70,9 @@ GEM
     hpricot (0.8.4)
     html5-boilerplate (1.0.0)
       compass (>= 0.11.1)
-    httparty (0.7.8)
-      crack (= 0.1.8)
+    httparty (0.8.0)
+      multi_json
+      multi_xml
     i18n (0.5.0)
     inherited_resources (1.2.2)
       has_scope (~> 0.5.0)
@@ -122,9 +129,6 @@ GEM
     thor (0.14.6)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
-    tumblr-api (0.1.4)
-      activesupport
-      httparty
     twitter (1.5.0)
       faraday (~> 0.6.1)
       faraday_middleware (~> 0.6.3)
@@ -155,6 +159,6 @@ DEPENDENCIES
   rails (= 3.0.7)
   scrobbler
   sqlite3-ruby
-  tumblr-api
+  tumblr-api!
   twitter
   whenever
