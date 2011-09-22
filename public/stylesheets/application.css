@@ -110,14 +110,27 @@ Backtrace:
 /Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
 /Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.7/lib/rails/application.rb:77:in `send'
 /Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
-/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:146:in `handle'
-/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:99:in `start'
-/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:86:in `each'
-/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:86:in `start'
-/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:66:in `loop'
-/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:66:in `start'
-/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/lib/nack/server.rb:13:in `run'
-/Users/mihar/Library/Application Support/Pow/Versions/0.2.2/node_modules/nack/bin/nack_worker:4
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/Users/mihar/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/mihar/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/mihar/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/mihar/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/mihar/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/mihar/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/mihar/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/mihar/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/mihar/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/mihar/.rvm/rubies/ree-1.8.7-2011.03/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/rack-1.2.3/lib/rack/handler/webrick.rb:13:in `run'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/rack-1.2.3/lib/rack/server.rb:217:in `start'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.7/lib/rails/commands/server.rb:65:in `start'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.7/lib/rails/commands.rb:30
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.7/lib/rails/commands.rb:27:in `tap'
+/Users/mihar/.rvm/gems/ree-1.8.7-2011.03@majx/gems/railties-3.0.7/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
 */
 body:before {
   white-space: pre;

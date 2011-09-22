@@ -7,4 +7,9 @@ class PagesController < ApplicationController
     @bookmarks = Bookmark.recent
   end
 
+  def location
+    respond_to do |wants|
+      wants.js
+    end
+  end
 end
