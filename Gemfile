@@ -8,6 +8,7 @@ gem 'compass'
 gem 'html5-boilerplate'
 gem 'whenever'
 
+gem 'crack'
 gem 'httparty'
 gem 'geoip'
 gem 'geokit'
