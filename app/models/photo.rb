@@ -3,8 +3,8 @@ class Photo < ActiveRecord::Base
   scope :recent, order("flickr_id DESC").limit(12)
     
   def self.fetch
-    FlickRaw.api_key = "158e177955af0f81b821c590d70a01db"
-    FlickRaw.shared_secret="35cabc146b688816"
+    FlickRaw.api_key = SERVICES['flickr']['api_key']
+    FlickRaw.shared_secret = SERVICES['flickr']['shared_secret']
     auth = flickr.auth.checkToken :auth_token => "72157606052057860-f025e05a0859d0b8"
     if photos = flickr.people.getPhotos(:user_id => "12414112@N04")
       photos.each do |photo|

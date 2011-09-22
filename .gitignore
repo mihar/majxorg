@@ -2,6 +2,7 @@
 .eprj
 public/assets/*
 config/initializers/gmaps.rb
+config/services.yml
 log/*.log
 tmp/**/*
 nbproject
@@ -9,11 +10,9 @@ db/*.sqlite3
 public/stylesheets/compiled
 public/system/*
 config/database.yml
-config/double_recall.yml
 .sass-cache
 coverage
 *.tmproj
 tmtags
 db/GeoLiteCity.dat
 dump.rdb
-tmp/*.xls
