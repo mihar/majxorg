@@ -3,5 +3,6 @@
   %p.excerpt= raw truncate post.body, :length => 255
   %p.date
     = time_ago_in_words post.posted_at
-    ago
+    ago on
+    = format_source post.source
   

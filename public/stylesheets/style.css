@@ -638,7 +638,7 @@ body {
 }
 /* line 116, ../../app/stylesheets/application.sass */
 #container a:hover {
-  text-decoration: underline;
+  border-bottom: 1px dotted #1d92b5;
 }
 /* line 118, ../../app/stylesheets/application.sass */
 #container a:active {
