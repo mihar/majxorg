@@ -25,7 +25,7 @@ gem 'jquery-rails'
 gem 'rinku', :require => 'rails_rinku'
 
 group :production do
-  gem 'mysql2', "< 0.3"
+  gem 'mysql2'
   gem 'therubyracer'
 end
 
