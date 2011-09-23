@@ -1,1 +1,1 @@
-SERVICES = YAML.load_file("#{RAILS_ROOT}/config/services.yml")
+SERVICES = YAML.load_file("#{Rails.root}/config/services.yml")

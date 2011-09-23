@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-V8::Application.config.secret_token = '7166a60c7d4065f3d034b249f01886ef957653da82d4e3ed03a6dbc0fd057e714e509bce29f88e93fecbadf5b1d2e375b9d4117e4272af0d01427449900b720a'
+V8::Application.config.secret_token = 'a83996ea1894e9774ae0d4bcf91bcc58308040e8cb850fcba1a1b4e523552ebd48302d33b485e8ba4a1ebfa317129b880669f64ea9b240fa17093820cc0c0e54'

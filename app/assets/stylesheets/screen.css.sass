@@ -1,11 +1,36 @@
+// Here's where we define some default constants
+@import partials/base
+@import html5-boilerplate
+
+@import partials/reset
+@import partials/styles
+@import partials/fonts
+@import partials/helpers
+@import partials/page
+
+// Media should come last
+@import partials/media
+
+// Slimbox
+@import partials/slimbox2
+
+// Own partials
+@import partials/shadows
 
 $m-blue: #1d92b5
 
 body
-  background: #222 url(/images/DotGrid2.png)
+  background: #222 url("DotGrid2.png")
+  font-size: 13px
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  line-height: 1.231
+  *font-size: small
+
+pre, code, kbd, samp 
+  font-family: monospace, sans-serif
 
 #head
-  background: url(/images/topgrad.png) repeat-x
+  background: url("topgrad.png") repeat-x
   border-top: 4px solid $m-blue
   position: fixed
   top: 0
@@ -34,7 +59,7 @@ body
   #location
     margin-top: 50px
     padding-left: 32px
-    background: url(/images/icons/location.png) no-repeat 0px 2px
+    background: url("icons/location.png") no-repeat 0px 2px
     #user_distance
       display: none
     &:hover
@@ -69,19 +94,19 @@ body
       height: 26px
       line-height: 26px
       &.facebook
-        background: url(/images/icons/facebook.png) no-repeat
+        background: url("icons/facebook.png") no-repeat
       &.twitter
-        background: url(/images/icons/twitter.png) no-repeat
+        background: url("icons/twitter.png") no-repeat
       &.lastfm
-        background: url(/images/icons/lastfm.png) no-repeat
+        background: url("icons/lastfm.png") no-repeat
       &.skype
-        background: url(/images/icons/skype.png) no-repeat
+        background: url("icons/skype.png") no-repeat
       &.flickr
-        background: url(/images/icons/flickr.png) no-repeat
+        background: url("icons/flickr.png") no-repeat
       &.delicious
-        background: url(/images/icons/delicious.png) no-repeat
+        background: url("icons/delicious.png") no-repeat
       &.linkedin
-        background: url(/images/icons/linkedin.png) no-repeat
+        background: url("icons/linkedin.png") no-repeat
       &:hover
         background-position: 0px -26px
       
