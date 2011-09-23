@@ -42,5 +42,7 @@ after "deploy:update", "deploy:link_config"
 
 require 'config/boot'
 
+load 'deploy/assets'
+
 # Whenever
 require 'whenever/capistrano'
