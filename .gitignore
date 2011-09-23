@@ -16,3 +16,4 @@ coverage
 tmtags
 db/GeoLiteCity.dat
 dump.rdb
+.bundle/config

@@ -1,4 +1,5 @@
 require 'bundler/capistrano'
+load 'deploy/assets'
 
 default_run_options[:pty] = true  # Must be set for the password prompt from git to work
 ssh_options[:compression] = false
@@ -23,26 +24,24 @@ namespace :deploy do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
   task :link_geodb do
-    run "ln -s #{shared_path}/db/GeoLiteCity.dat #{current_path}/db/GeoLiteCity.dat"
+    run "ln -s #{shared_path}/db/GeoLiteCity.dat #{latest_release}/db/GeoLiteCity.dat"
   end
   task :link_db do
-    run "ln -s #{shared_path}/config/database.yml #{current_path}/config/database.yml"
+    run "ln -s #{shared_path}/config/database.yml #{latest_release}/config/database.yml"
   end
   task :link_config do
-    run "ln -s #{shared_path}/config/services.yml #{current_path}/config/services.yml"
+    run "ln -s #{shared_path}/config/services.yml #{latest_release}/config/services.yml"
   end
 end
 
 # Link Geo DB.
-after "deploy:update", "deploy:link_geodb"
+before "deploy:assets:precompile", "deploy:link_geodb"
 # Link DB.
-after "deploy:update", "deploy:link_db"
+before "deploy:assets:precompile", "deploy:link_db"
 # Link config.
-after "deploy:update", "deploy:link_config"
+before "deploy:assets:precompile", "deploy:link_config"
 
 require 'config/boot'
-
-load 'deploy/assets'
 
 # Whenever
 require 'whenever/capistrano'
