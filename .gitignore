@@ -1,5 +1,6 @@
 .DS_Store
 .eprj
+.rvmrc
 public/assets/*
 config/initializers/gmaps.rb
 config/services.yml
