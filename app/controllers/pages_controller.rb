@@ -5,6 +5,7 @@ class PagesController < ApplicationController
     @tweets = Tweet.recent
     @photos = Photo.recent
     @bookmarks = Bookmark.recent
+    cache_output 3600
   end
 
   def location

@@ -17,4 +17,9 @@ class ApplicationController < ActionController::Base
   def current_location
     @current_location ||= Location.last
   end
+  
+  def cache_output length = 86400
+    response.header['Cache-Control'] = "public, max-age=#{length}"
+    response.header['Expires'] = CGI.rfc1123_date(Time.now + length)
+  end
 end

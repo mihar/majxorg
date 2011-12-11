@@ -32,6 +32,10 @@ namespace :deploy do
   task :link_config do
     run "ln -s #{shared_path}/config/services.yml #{latest_release}/config/services.yml"
   end
+  task :link_rvmrc do
+    run "ln -s #{shared_path}/rvmrc #{latest_release}/.rvmrc"
+    run "ln -s #{shared_path}/config/setup_load_paths.rb #{latest_release}/config/setup_load_paths.rb"
+  end
 end
 
 # Link Geo DB.
@@ -40,6 +44,8 @@ before "deploy:assets:precompile", "deploy:link_geodb"
 before "deploy:assets:precompile", "deploy:link_db"
 # Link config.
 before "deploy:assets:precompile", "deploy:link_config"
+# Link rvm.
+before "deploy:assets:precompile", "deploy:link_rvmrc"
 
 require 'config/boot'
 
