@@ -8,6 +8,8 @@ class CreateLocations < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    add_index :locations, :located_at, :unique => true
   end
 
   def self.down

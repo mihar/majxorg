@@ -5,8 +5,8 @@ class Photo < ActiveRecord::Base
   def self.fetch
     FlickRaw.api_key = SERVICES['flickr']['api_key']
     FlickRaw.shared_secret = SERVICES['flickr']['shared_secret']
-    auth = flickr.auth.checkToken :auth_token => "72157606052057860-f025e05a0859d0b8"
-    if photos = flickr.people.getPhotos(:user_id => "12414112@N04")
+    auth = flickr.auth.checkToken :auth_token => SERVICES['flickr']['auth_token']
+    if photos = flickr.people.getPhotos(:user_id => SERVICES['flickr']['user_id'])
       photos.each do |photo|
         new_photo = self.new
         new_photo.flickr_id = photo.id

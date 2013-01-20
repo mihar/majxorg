@@ -9,7 +9,7 @@ class Location < ActiveRecord::Base
   scope :recent, limit(5)
 
   def self.fetch
-    loc = HTTParty.get "http://www.google.com/latitude/apps/badge/api?user=#{SERVICES['latitude_user_id']}&type=json"
+    loc = HTTParty.get "http://www.google.com/latitude/apps/badge/api?user=#{SERVICES['latitude']['user_id']}&type=json"
     
     if loc and loc["features"] and location = loc["features"][0]
       new_location = self.new

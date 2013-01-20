@@ -11,6 +11,8 @@ class CreatePhotos < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    add_index :photos, :flickr_id, :unique => true
   end
 
   def self.down

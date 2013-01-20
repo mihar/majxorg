@@ -10,6 +10,8 @@ class CreateTracks < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    add_index :tracks, :time_code, :unique => true
   end
 
   def self.down

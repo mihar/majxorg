@@ -2,7 +2,11 @@
   %meta{ :charset => "utf-8" }/
   %meta{ :content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }/
   
-  %title Miha Rebernik, majx
+  %title 
+    - if @page_title
+      #{@page_title} by Miha Rebernik, majx
+    - else
+      Miha Rebernik, majx
     
   %meta{ :content => "Online home of Miha Rebernik, a web developer, netizen and art appreciator. I work with Ruby, Rails, HTML, CSS and JS to create awesome.", :name => "description" }/
   %meta{ :content => "Miha Rebernik, majx, mihar", :name => "author" }/

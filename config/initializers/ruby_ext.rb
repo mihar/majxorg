@@ -1,3 +1,5 @@
+# Encoding: utf-8
+
 class String
 
   def make_websafe

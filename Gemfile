@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.3'
+ruby '1.9.3'
+gem 'rails'
 
 gem 'inherited_resources'
 gem 'haml'
@@ -22,7 +23,7 @@ gem 'flickraw'
 gem 'uglifier'
 gem 'jquery-rails'
 
-gem 'rinku', :require => 'rails_rinku'
+gem 'rinku'
 
 group :production do
   gem 'mysql2'
@@ -31,5 +32,5 @@ end
 
 group :development, :test do
   gem 'capistrano'
-  gem 'sqlite3'
+  gem 'sqlite3', "~> 1.3.5"
 end

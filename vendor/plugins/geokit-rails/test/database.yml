@@ -1,4 +1,4 @@
-baes: &base
+base: &base
   host: localhost
   username: root
   password: 
@@ -12,9 +12,3 @@ postgresql:
   adapter: postgresql
   database: geokit_plugin_test
   <<: *base
-
-sqlserver:
-  adapter: sqlserver
-  mode: ODBC
-  dsn: geokit_tests
-  username: ruby

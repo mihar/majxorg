@@ -7,7 +7,7 @@ class Track < ActiveRecord::Base
   scope :recent, order("played_at DESC").limit(15)
   
   def self.fetch
-    if user = Scrobbler::User.new('majx')
+    if user = Scrobbler::User.new(SERVICES['lastfm']['username'])
       if tracks = user.recent_tracks
         tracks.each do |track|
           new_track = self.new

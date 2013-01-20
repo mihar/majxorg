@@ -5,11 +5,12 @@ class CreateBookmarks < ActiveRecord::Migration
       t.text :description
       t.string :url
       t.string :tags
-      t.string :delicious_id
       t.datetime :posted_at
 
       t.timestamps
     end
+
+    add_index :bookmarks, :url, :unique => true
   end
 
   def self.down

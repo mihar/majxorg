@@ -1,22 +1,32 @@
 #tier_1
   %section#posts
-    %h1 Posts
+    %h3
+      = link_to "Posts", posts_path, :title => 'view more posts'
+      %small view more posts
     - cache @posts.first do
       = render @posts
   %section#photos
-    %h1 Photos
+    %h3
+      = link_to "Photos", photos_path, :title => 'view more photos'
+      %small view more photos
     - cache @photos.first do
       %ul= render @photos, :square => true
   %section#bookmarks
-    %h1 Bookmarks
+    %h3 
+      = link_to "Bookmarks", bookmarks_path, :title => 'view more bookmarks'
+      %small view more bookmarks
     - cache @bookmarks.first do
       %dl= render @bookmarks
 #tier_2
   %section#tweets
-    %h1 Tweets
+    %h3 
+      = link_to "Tweets", tweets_path, :title => 'view more tweets'
+      %small view more tweets
     - cache @tweets.first do
       %dl= render @tweets
   %section#tracks
-    %h1 Tunes
+    %h3
+      = link_to "Tunes", tracks_path, :title => 'view more listened tunes'
+      %small view more listened tunes
     - cache @tracks.first do
       %dl= render @tracks

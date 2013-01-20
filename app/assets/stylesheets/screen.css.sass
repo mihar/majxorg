@@ -23,7 +23,7 @@ body
   background: #222 url("DotGrid2.png")
   font-size: 13px
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-  line-height: 1.231
+  line-height: 1.4
   *font-size: small
 
 pre, code, kbd, samp 
@@ -44,6 +44,8 @@ pre, code, kbd, samp
   float: left
   position: absolute
   top: 100px
+  .logo:hover
+    border: 0
   #card
     margin-top: 50px
     h1
@@ -91,8 +93,9 @@ pre, code, kbd, samp
     li
       list-style: none
       padding-left: 32px
-      height: 26px
-      line-height: 26px
+      height: 22px
+      line-height: 22px
+      padding-top: 4px
       &.facebook
         background: url("icons/facebook.png") no-repeat
       &.twitter
@@ -107,6 +110,12 @@ pre, code, kbd, samp
         background: url("icons/delicious.png") no-repeat
       &.linkedin
         background: url("icons/linkedin.png") no-repeat
+      &.instagram
+        background: url("icons/instagram.png") no-repeat
+      &.dribbble
+        background: url("icons/dribbble.png") no-repeat
+      &.github
+        background: url("icons/github.png") no-repeat
       &:hover
         background-position: 0px -26px
       
@@ -158,7 +167,7 @@ pre, code, kbd, samp
         +italic
         font-size: 16px
         
-  section
+  section, .standalone_section
     margin-bottom: 25px
     border-bottom: 1px solid #292929
     .date
@@ -167,13 +176,27 @@ pre, code, kbd, samp
       color: #666
       margin-bottom: 19px
     &:hover
-      h1
+      h3
         text-shadow: 0px 0px 5px $m-blue
-    h1
+        &:hover small
+          display: inline
+
+    h3
       +large
       line-height: 24px
       margin-bottom: 25px
-      
+      small
+        display: none
+        font-weight: normal
+        color: #666
+        text-shadow: none
+        font-size: 11px
+        line-height: 11px
+        margin: 0
+      a
+        color: $font-color !important
+        &:hover
+          border: 0
     &#tweets
       dt
         span
@@ -201,76 +224,94 @@ pre, code, kbd, samp
           text-decoration: none
           -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.75)
           -moz-box-shadow: 0 3px 6px rgba(0,0,0,.75)
+          -o-box-shadow: 0 3px 6px rgba(0,0,0,.75)
           &:hover
-            -moz-transition: -moz-transform .15s
+            transition: transform .15s
+            transform: scale(1.1)
+            -webkit-transition: -webkit-transform .15s
             -webkit-transform: scale(1.1)
+            -moz-transition: -moz-transform .15s
             -moz-transform: scale(1.1)
+            -o-transition: -o-transform .15s
+            -o-transform: scale(1.1)
             -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.95)
             -moz-box-shadow: 0 3px 6px rgba(0,0,0,.95)
+            -o-box-shadow: 0 3px 6px rgba(0,0,0,.95)
+            border: 0
           img
             display: block
           
-    
+  .standalone_section
+    padding:
+      top: 100px
+    width: 645px
+    float: right
+    border: none
+
+#posts-index
+  h4
+    margin-top: 0
+    font-size: 18px
+    font-weight: normal
+
 #photos-index
-  ul
+  #photos
+    padding:
+      top: 100px
+    width: 610px
+    float: right
+
     li
-      display: inline
+      // display: inline
+      float: left
       list-style: none outside
       &:nth-child(even) a
         -webkit-transform: rotate(2deg)
         -moz-transform: rotate(2deg)
-        margin:
-          top: -25px
-          left: -25px
+        top: -15px
       &:nth-child(3n) a
         -webkit-transform: none
         -moz-transform: none
-        position: relative
-        top: -5px
+        top: -8px
       &:nth-child(5n) a
         -webkit-transform: rotate(5deg)
         -moz-transform: rotate(5deg)
-        position: relative
         right: 5px
       &:nth-child(8n) a
-        position: relative
         top: 8px
         right: 5px
-        margin:
-          top: -5px
-          left: -5px
       &:nth-child(11n) a
-        position: relative
         top: 3px
         left: -5px
       a
-        float: left
         display: block
         background: #fff
+        position: relative
         margin:
-          top: -15px
-          left: -15px
+          top: -5px
+          left: -20px
         padding: 10px
           bottom: 15px
         font: 14px/14px "Marker Felt"
-        color: #333
+        color: #333 !important
         text-decoration: none
         text-align: center
+        text-shadow: none
         -webkit-transition: -webkit-transform .15s ease
         -moz-transition: -moz-transform .15s ease
-        -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5)
-        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5)
+        -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.75)
+        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.75)
         -webkit-transform: rotate(-2deg)
         -moz-transform: rotate(-2deg)
         &:after
-          content: attr(title)
+          content: attr(alt)
         &:hover
           -webkit-transform: scale(1.25)
           -moz-transform: scale(1.25)
-          -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.75)
-          -moz-box-shadow: 0 3px 6px rgba(0,0,0,.75)
-          position: relative
+          -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.95)
+          -moz-box-shadow: 0 3px 6px rgba(0,0,0,.95)
           z-index: 5
+          border: 0
         span
           width: 150px
           height: 150px

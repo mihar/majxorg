@@ -1,12 +1,15 @@
-= link_to root_path do
+= link_to root_path, :class => 'logo' do
   = image_tag "majx_logo.png", :alt => "Miha Rebernik, majx"
   
 #card
   %h1
     Miha Rebernik
   %h2
-    web developer, netizen, art appreciator
-  %p I work with Ruby, Rails, HTML, CSS and JS to create awesome.
+    developer, designer, netizen
+  %p 
+    I design, build and ship products. 
+    %br
+    All the time.
 
 #location
   #user_distance
@@ -32,8 +35,10 @@
 %ul#social
   %li.facebook= link_to "Facebook", "http://facebook.com/mihar"
   %li.twitter= link_to "Twitter", "http://twitter.com/mihar"
+  %li.dribbble= link_to "Dribbble", "http://dribbble.com/mihar"
+  %li.github= link_to "Github", "http://github.com/mihar"
   %li.flickr= link_to "Flickr", "http://flickr.com/majx"
+  %li.instagram= link_to "Instagram", "http://instagram.com/mihar"
   %li.lastfm= link_to "Last.fm", "http://last.fm/user/majx"
-  %li.delicious= link_to "Delicious", "http://delicious.com/rasmajx"
-  %li.skype= link_to "Skype", "skype://rasmajx"
+  %li.skype= link_to "Skype", "skype://miharebernik"
   %li.linkedin= link_to "LinkedIn", "http://www.linkedin.com/in/miharebernik"

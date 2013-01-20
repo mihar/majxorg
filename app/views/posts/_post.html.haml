@@ -1,5 +1,5 @@
 %article.post
-  %h3= link_to post.title, post.url
+  %h4= link_to post.title, post.url
   %p.excerpt= raw truncate post.body, :length => 255
   %p.date
     = time_ago_in_words post.posted_at

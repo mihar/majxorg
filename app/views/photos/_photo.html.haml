@@ -1,5 +1,5 @@
 %li
-  = link_to photo.url, :title => photo.title, :rel => :lightbox do
+  = link_to photo.url, :title => photo.title, :alt => truncate(photo.title, :length => 26), :rel => :lightbox do
     - if defined?(square) and square
       - url = photo.url_square
     - else

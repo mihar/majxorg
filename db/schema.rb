@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -17,20 +18,23 @@ ActiveRecord::Schema.define(:version => 20110612084023) do
     t.text     "description"
     t.string   "url"
     t.string   "tags"
-    t.string   "delicious_id"
     t.datetime "posted_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
+  add_index "bookmarks", ["url"], :name => "index_bookmarks_on_url", :unique => true
+
   create_table "locations", :force => true do |t|
-    t.decimal  "lat"
-    t.decimal  "lng"
+    t.float    "lat"
+    t.float    "lng"
     t.string   "reverse"
     t.datetime "located_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
+
+  add_index "locations", ["located_at"], :name => "index_locations_on_located_at", :unique => true
 
   create_table "photos", :force => true do |t|
     t.string   "title"
@@ -40,9 +44,11 @@ ActiveRecord::Schema.define(:version => 20110612084023) do
     t.string   "url_small"
     t.string   "url_square"
     t.string   "flickr_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
+
+  add_index "photos", ["flickr_id"], :name => "index_photos_on_flickr_id", :unique => true
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -53,9 +59,11 @@ ActiveRecord::Schema.define(:version => 20110612084023) do
     t.string   "remote_id"
     t.datetime "posted_at"
     t.string   "source"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
+
+  add_index "posts", ["remote_id"], :name => "index_posts_on_remote_id", :unique => true
 
   create_table "tracks", :force => true do |t|
     t.string   "title"
@@ -64,16 +72,20 @@ ActiveRecord::Schema.define(:version => 20110612084023) do
     t.string   "url"
     t.string   "time_code"
     t.datetime "played_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
+
+  add_index "tracks", ["time_code"], :name => "index_tracks_on_time_code", :unique => true
 
   create_table "tweets", :force => true do |t|
     t.string   "tweet"
     t.string   "tweet_id"
     t.datetime "tweeted_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
+
+  add_index "tweets", ["tweet_id"], :name => "index_tweets_on_tweet_id", :unique => true
 
 end

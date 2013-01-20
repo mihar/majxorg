@@ -7,6 +7,8 @@ class CreateTweets < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    add_index :tweets, :tweet_id, :unique => true
   end
 
   def self.down
