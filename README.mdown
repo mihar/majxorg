@@ -1,0 +1,8 @@
+# Personal online presence aggregator
+
+This is an app that uses background fetchers to aggregate my online presence on sites such as
+Google Latitude, Flickr, Tumblr, Last.fm and Pinboard.
+
+It's running on Heroku's free tier, and uses [Heroku Scheduler](https://devcenter.heroku.com/articles/scheduler) for the background fetching.
+
+Check it out at [http://miha.rebernik.info](http://miha.rebernik.info)
