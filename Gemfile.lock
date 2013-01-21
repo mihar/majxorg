@@ -39,8 +39,8 @@ GEM
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
     builder (3.0.4)
-    chunky_png (1.2.0)
-    compass (0.11.3)
+    chunky_png (1.2.7)
+    compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
@@ -66,7 +66,7 @@ GEM
       nokogiri (~> 1.5.0)
       ruby-hmac
     formatador (0.2.4)
-    fssm (0.2.7)
+    fssm (0.2.9)
     geoip (1.1.1)
     geokit (1.6.0)
     haml (3.1.7)
@@ -129,7 +129,11 @@ GEM
     responders (0.6.4)
     rinku (1.2.2)
     ruby-hmac (0.4.0)
-    sass (3.1.2)
+    sass (3.2.5)
+    sass-rails (3.2.6)
+      railties (~> 3.2.0)
+      sass (>= 3.1.10)
+      tilt (~> 1.3)
     scrobbler (0.2.3)
       activesupport (>= 1.4.2)
       hpricot (>= 0.4.86)
@@ -185,6 +189,7 @@ DEPENDENCIES
   pg
   rails
   rinku
+  sass-rails
   scrobbler
   sqlite3 (~> 1.3.5)
   therubyracer-heroku

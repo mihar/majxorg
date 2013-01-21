@@ -35,6 +35,7 @@ group :development, :test do
 end
 
 group :assets do
+  gem 'sass-rails'
   gem 'jquery-rails'
   gem 'uglifier', '>= 1.0.3'
   gem 'asset_sync'
