@@ -15,6 +15,5 @@ config/database.yml
 coverage
 *.tmproj
 tmtags
-db/GeoLiteCity.dat
 dump.rdb
 .bundle/config
