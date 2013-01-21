@@ -26,11 +26,11 @@ gem 'jquery-rails'
 gem 'rinku'
 
 group :production do
-  gem 'mysql2'
-  gem 'therubyracer'
+  gem 'pg'
+  gem 'therubyracer-heroku'
+  gem 'thin'
 end
 
 group :development, :test do
-  gem 'capistrano'
   gem 'sqlite3', "~> 1.3.5"
 end
