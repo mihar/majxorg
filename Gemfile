@@ -20,10 +20,9 @@ gem 'tumblr-api', :require => 'tumblr'
 gem 'httparty'
 gem 'flickraw'
 
-gem 'uglifier'
-gem 'jquery-rails'
-
 gem 'rinku'
+
+gem 'aws-sdk'
 
 group :production do
   gem 'pg'
@@ -33,4 +32,10 @@ end
 
 group :development, :test do
   gem 'sqlite3', "~> 1.3.5"
+end
+
+group :assets do
+  gem 'jquery-rails'
+  gem 'uglifier', '>= 1.0.3'
+  gem 'asset_sync'
 end

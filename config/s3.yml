@@ -1,0 +1,11 @@
+development:
+  bucket: 'majxorg-dev'
+  access_key_id: 'AKIAJAZPDD532Z52P24A'
+  secret_access_key: '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'
+
+test: development  
+  
+production: 
+  bucket: 'majxorg'
+  access_key_id: 'AKIAJAZPDD532Z52P24A'
+  secret_access_key: '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'
