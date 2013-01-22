@@ -8,6 +8,7 @@ if ENV['TWITTER_USERNAME'] # Heroku
       'shared_secret' => ENV['FLICKR_SHARED_SECRET'],
       'api_key' => ENV['FLICKR_API_KEY'],
       'auth_token' => ENV['FLICKR_AUTH_TOKEN'],
+      'auth_secret' => ENV['FLICKR_AUTH_SECRET'],
       'user_id' => ENV['FLICKR_USER_ID']
     }
   }
