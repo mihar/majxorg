@@ -4,10 +4,9 @@ ruby '1.9.3'
 gem 'rails'
 
 gem 'inherited_resources'
-gem 'haml'
-gem 'compass'
-gem 'html5-boilerplate'
-gem 'whenever'
+gem 'haml-rails' # Optional - to generate haml
+gem 'jquery-rails'
+gem 'html5-rails'
 
 gem 'crack'
 gem 'httparty'
@@ -36,7 +35,9 @@ end
 
 group :assets do
   gem 'sass-rails'
-  gem 'jquery-rails'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
+  gem 'compass-rails'
+  gem 'compass-h5bp'
+  gem 'uglifier'
   gem 'asset_sync'
 end

@@ -1,23 +1,16 @@
-// Here's where we define some default constants
-@import partials/base
-@import html5-boilerplate
+@import "partials/variables"
+@import "h5bp"
+@include h5bp-main
 
-@import partials/reset
-@import partials/styles
-@import partials/fonts
-@import partials/helpers
-@import partials/page
-
-// Media should come last
-@import partials/media
+*
+  margin: 0
+  padding: 0
 
 // Slimbox
-@import partials/slimbox2
+@import "partials/slimbox2"
 
 // Own partials
-@import partials/shadows
-
-$m-blue: #1d92b5
+@import "partials/shadows"
 
 body
   background: #222 image_url("DotGrid2.png")
@@ -56,8 +49,8 @@ pre, code, kbd, samp
     p
       margin: 10px 0
       font-size: 14px
-      +serif
-      +italic
+      font-family: Georgia, serif
+      font-style: italic
   #location
     margin-top: 50px
     padding-left: 32px
@@ -70,7 +63,7 @@ pre, code, kbd, samp
       display: block
       line-height: 10px
       color: #666
-      +real-small
+      font-size: 10px
   #map
     margin-top: 10px
     border: 5px solid #333
@@ -85,7 +78,7 @@ pre, code, kbd, samp
       float: right
       margin-top: 10px
       color: #ccc
-      +real-small
+      font-size: 10px
   #social
     margin: 0
       top: 50px
@@ -163,16 +156,16 @@ pre, code, kbd, samp
         font-size: 24px
       p
         margin-top: 20px
-        +serif
-        +italic
+        font-family: Georgia, serif
+        font-style: italic
         font-size: 16px
         
   section, .standalone_section
     margin-bottom: 25px
     border-bottom: 1px solid #292929
     .date
-      +real-small
-      +right
+      font-size: 10px
+      text-align: right
       color: #666
       margin-bottom: 19px
     &:hover
@@ -182,7 +175,7 @@ pre, code, kbd, samp
           display: inline
 
     h3
-      +large
+      font-size: 24px
       line-height: 24px
       margin-bottom: 25px
       small
@@ -207,7 +200,7 @@ pre, code, kbd, samp
     &#bookmarks
       border: 0
     &#photos
-      +pie-clearfix
+      +cfix
       padding-bottom: 25px
       ul
         list-style: none

@@ -8,20 +8,15 @@
     - else
       Miha Rebernik, majx
     
-  %meta{ :content => "Online home of Miha Rebernik, a web developer, netizen and art appreciator. I work with Ruby, Rails, HTML, CSS and JS to create awesome.", :name => "description" }/
+  %meta{ :content => "Miha Rebernik, developer, designer and netizen. Find here my tweets, blog posts, photos, tracks I listen to, bookmarks and more.", :name => "description" }/
   %meta{ :content => "Miha Rebernik, majx, mihar", :name => "author" }/
-  
-  -# Mobile viewport optimized: j.mp/bplateviewport
+  %meta{ :content => "Miha Rebernik, majx, mihar, Twitter, tweets, Tumblr, blog, post, music, Last.fm, track, tune, picture, Flickr, Instagram, photos, bookmarks, Pinboard", :name => "keywords" }/
   %meta{ :content => "width=1024", :name => "viewport" }/
 
-  
-  -# Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references
   %link{ :href => "http://majxorg.s3.amazonaws.com/favicon.ico", :rel => "shortcut icon" }/
-  -# %link{ :href => "/apple-touch-icon.png", :rel => "apple-touch-icon" }/
   
   = render :partial => 'layouts/stylesheets'
   
-  -# All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects
-  = javascript_include_tag 'modernizr'
+  = javascript_include_tag 'polyfills'
   
   = csrf_meta_tag

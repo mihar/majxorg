@@ -1,0 +1,26 @@
+$m-blue: #1d92b5
+$line-height: 1.4
+$font-color: #eee
+$font-family: sans-serif
+$font-size: 1em
+$link-color: $m-blue
+$link-hover-color: $m-blue
+$link-visited-color: #2483a6
+$selected-font-color: #fff
+$selected-background-color: #ff5e99
+$invalid-background-color: #f0dddd
+
+=cfix
+  :display inline-block
+  :display block
+  &:after
+    :clear both
+    :content ' '
+    :display block
+    :font-size 0
+    :line-height 0
+    :visibility hidden
+    :width 0
+    :height 0
+  * html &
+    :height 1%
