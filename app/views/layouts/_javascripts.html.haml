@@ -1,15 +1,5 @@
 = javascript_include_tag '/location', 'application'
 
--# Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb
-/[if lt IE 7 ]
-  = javascript_include_tag 'dd_belatedpng'
-  :javascript
-    //DD_belatedPNG.fix('img, .png_bg');
-    
--#  Append your own using content_for :javascripts
-= yield :javascripts
-
--# Looks for google_account_id first in ENV['GOOGLE_ACCOUNT_ID'] then in config/google.yml
 - if !google_account_id.blank?
   :javascript
     var _gaq = [['_setAccount', '#{google_account_id}'], ['_trackPageview']];
