@@ -1,4 +1,5 @@
-= javascript_include_tag '/location', 'application'
+%script{:src => '/location.js', :type => 'text/javascript'}
+= javascript_include_tag 'application'
 
 - if !google_account_id.blank?
   :javascript
